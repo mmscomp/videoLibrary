@@ -28,21 +28,23 @@ public class LoginController {
 	public void setLoginService(LoginService ls){
 		this.loginService = ls;
 	}
-	@RequestMapping(value = {"/log/{genre}/{id}  "}, method = RequestMethod.GET)
+	@RequestMapping(value = {"/log/{genre}/{title}/{id}"}, method = RequestMethod.GET)
 //	@Repeatable(value = "/", method = RequestMethod.GET)	
 
-	public String log(@PathVariable String genre,@PathVariable("id") int id, Model model) {
+	public String log(@PathVariable String genre,@PathVariable String title, @PathVariable("id") int id, Model model) {
 		
-		System.out.println(genre);
+		System.out.println("35" + genre);
 		model.addAttribute("genre", genre);
 		model.addAttribute("mId", id);
+		model.addAttribute("title", title);
 	//	System.out.println(this.personService.listPerson());
 		return "login";
 	}
-	@RequestMapping(value = "/log/register", method = RequestMethod.GET)
-	public String register(Model model) {
-	//	model.addAttribute("person", new Person());
-	//	model.addAttribute("listPerson", this.personService.listPerson());
+	@RequestMapping(value = "/log/{genre}/{title}/{id}/register", method = RequestMethod.GET)
+	public String register(Model model, @PathVariable String genre, @PathVariable String title, @PathVariable int id) {
+		model.addAttribute("genre", genre);
+		model.addAttribute("title", title);
+		model.addAttribute("id", id);
 	//	System.out.println(this.personService.listPerson());
 		return "register";
 	}

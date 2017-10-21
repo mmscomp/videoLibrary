@@ -21,7 +21,7 @@
     text-align: left;
 }
 .diary-primary{
-    background-color: #77ff00;<!--#594a42;-->
+    background-color: #232323;<!--#594a42;-->
     color: red;
     padding-top: 25px;
     padding-bottom: 160px;
@@ -35,7 +35,7 @@ h1.signUp {
 }
 
 h1.signUp:hover {
-   background-color: green;
+   background-color: #858585;
    cursor: crosshair;
 }
 
@@ -68,7 +68,7 @@ font-size: 30pt;
 #vdo{
 display: inline-block;
 }
-#vdo.after{
+#vdo.after{ 
 content: ' ';
 display: inline-block;
 width: 100%;
@@ -121,11 +121,11 @@ width: 100%;
 	-->
 	<div class="container">
 	<a href="/movie/${genre}">Go Back</a>
-	<div class="title"><h1><span> MOVIE Review </span></h1> </div>
-	<div class="sub-title"> <h2>Read Carefully</h2></div>
+	<div class="title"><h1><span> MOVIE Review for "${title}" </span></h1> </div>
+	<div class="sub-title"> <h2>Read carefully</h2></div>
 	<c:forEach items="${reviewList}" var="review">
-	         <h2>${review.review}</h2>
-	    <br><br><br>   
+	         <h2>${review.movieId}</h2>
+	    <br>  
 	</c:forEach>
 	</div>
 	</section>

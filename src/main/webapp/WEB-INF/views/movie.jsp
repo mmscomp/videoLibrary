@@ -92,14 +92,14 @@ color: white;
 			<li><a href="/todo.do">Todos</a></li>
 			<li><a href="http://www.yahoo.com">Yahoo</a></li>
 		</ul>
--->
+
 		<ul class="nav navbar-nav navbar-right">
 			<li><a href="#">Login</a></li>
 		</ul>
 
 	</nav>
-		<section>
-	<!--  <div class="container">-->
+	 	<section>
+	  <div class="container">
 		<p>
 			<font color=red>${errorMessage }</font>
 		</p>
@@ -112,7 +112,7 @@ color: white;
 		</form>
 	
   </section>
-	
+	-->
 	<section class= "diary diary-primary bg-image">
 <!--	 <img src="C:\Users\ARIGAP\Desktop\VS\images\thinking-girl.jpg">
 	-->

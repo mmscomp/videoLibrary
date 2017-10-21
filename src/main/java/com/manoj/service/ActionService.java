@@ -50,8 +50,8 @@ public class ActionService  {
        this.actionDao.reviewActionMovie(r);	   
    }
    @Transactional
-   public List<String> listReview(String genre, int mId){
-	   return this.actionDao.listReview(genre,mId);
+   public List<String> listReview(String genre, String title, int mId){
+	   return this.actionDao.listReview(genre,title,mId);
    }
 	//@Override
 	@Transactional

@@ -31,7 +31,7 @@ public class ActionController {
 	}
 	@RequestMapping(value={"/movie/Action"}, method=RequestMethod.GET)
 	public String log(Model model){
-		System.out.println("Im inside Action Controller");
+		System.out.println("Im 34 inside Action Controller");
 		model.addAttribute("act","action");
 		model.addAttribute("actionMovie",this.actionService.listActionMovie());
 		System.out.println("1");
@@ -64,11 +64,13 @@ public class ActionController {
 		this.actionService.reviewActionMovie(r);
 		return "redirect:/movie/Action";
 	}
-    @RequestMapping(value="/movie/action/{id}/views", method=RequestMethod.GET)
-    public String views(Model model,@PathVariable("id") int id){
+    @RequestMapping(value="/movie/action/{title}/{id}/views", method=RequestMethod.GET)
+    public String views(Model model,@PathVariable String title, @PathVariable("id") int id){
     	model.addAttribute("genre","Action");
+    	System.out.println("I'm inside action controller/views");
     	model.addAttribute("mId",id);
-    	model.addAttribute("reviewList",this.actionService.listReview("action",id));
+    	model.addAttribute("title", title);
+    	model.addAttribute("reviewList",this.actionService.listReview("action",title,id));
     	return "views";
     }
     @RequestMapping(value="/movie/login", method=RequestMethod.GET)

@@ -66,10 +66,10 @@ public class ActionDao {
 		session.persist(r);
 	}
 	@SuppressWarnings("unchecked")
-	public List<String> listReview(String gen, int mId){
+	public List<String> listReview(String gen, String title, int mId){
 		Session session = this.sessionFactory.getCurrentSession();
-		String hql = "from Review r where r.genre = ? and r.movieId=?";
-		List<String> listReview = session.createQuery(hql).setParameter(0,gen).setString(1, String.valueOf(mId)).list();
+		String hql = "from Review r where r.genre = ? and r.title = ? and r.movieId=?";
+		List<String> listReview = session.createQuery(hql).setParameter(0,gen).setParameter(1,title).setString(2, String.valueOf(mId)).list();
 	    return listReview;
 	}
 //	@Override

@@ -21,7 +21,7 @@
     text-align: left;
 }
 .diary-primary{
-    background-color: #77ff00;<!--#594a42;-->
+    background-color: #999;<!--#594a42;-->
     color: red;
     padding-top: 25px;
     padding-bottom: 160px;
@@ -57,9 +57,10 @@ background-color: red;
 }
 .title>h1{
 color: white;
+text-align: center;
 }
 h2{
-color: white;
+color: black; /*white;*/
 }
 .container>a{ 
 color: solid black;
@@ -97,12 +98,12 @@ width: 100%;
 			<li><a href="/todo.do">Todos</a></li>
 			<li><a href="http://www.yahoo.com">Yahoo</a></li>
 		</ul>
--->
+
 		<ul class="nav navbar-nav navbar-right">
 			<li><a href="#">Login</a></li>
 		</ul>
 
-	</nav>
+	</nav>-->
 		<section>
 	<!--  <div class="container">-->
 		<p>
@@ -134,8 +135,8 @@ width: 100%;
 	    <br><br><br>
 	    </form>
 	    -->
-	    <a href=/log/${act}/${action.id} >Write a review</a>
-	    <a href=/movie/${act}/${action.id}/views >View reviews</a>
+	    <a href=/log/${act}/${action.title}/${action.id} >Write a review</a>
+	    <a href=/movie/${act}/${action.title}/${action.id}/views >View reviews</a>
 	</div>
 	                    
 	</c:forEach>

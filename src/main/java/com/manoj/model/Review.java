@@ -16,7 +16,8 @@ public class Review {
 	
 	@Column(name="movieGenre")
 	private String genre;
-	
+	@Column(name="movieName")
+	private String title;
 	@Column(name="movieId")
 	private int movieId;
     @Column(name="user")
@@ -34,6 +35,14 @@ public class Review {
 
 	public String getGenre() {
 		return genre;
+	}
+
+	public String getTitle() {
+		return title;
+	}
+
+	public void setTitle(String title) {
+		this.title = title;
 	}
 
 	public void setGenre(String genre) {
