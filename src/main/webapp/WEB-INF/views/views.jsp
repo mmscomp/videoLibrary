@@ -5,7 +5,12 @@
 
 <html>
 <head>
-<title>Yahoo!!</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Movies Yahoo!!</title>
+<link rel="stylesheet" href="css/font-awesome.css">
+<link rel="stylesheet" href="css/font-awesome.min.css">
 <link href="webjars/bootstrap/3.3.6/css/bootstrap.min.css"
 	rel="stylesheet">
 
@@ -17,28 +22,18 @@
     margin-left: auto;
     max-width: 1150px;
 }
-.diary{
+.view{
     text-align: left;
 }
-.diary-primary{
-    background-color: #232323;<!--#594a42;-->
+.view-primary{
+    background-color: #dcb;<!--#594a42;-->
     color: red;
     padding-top: 25px;
     padding-bottom: 160px;
 }
-.diary-primary.bg-image > img{
+.view-primary.bg-image > img{
     opacity: 0.4;
 }
-h1.signUp {
-    margin-top: -20px;
-    float: right;
-}
-
-h1.signUp:hover {
-   background-color: #858585;
-   cursor: crosshair;
-}
-
 .bg-image{
     position: relative;
     overflow: hidden;
@@ -54,33 +49,61 @@ h1.signUp:hover {
 }
 h1 > span {
 background-color: red;
+text-align: center;
 }
 .title>h1{
 color: white;
+text-align: center;
 }
 h2{
-color: white;
+color: black;
 }
-.container>a{
+a{
 color: solid black;
 font-size: 30pt;
-}
-#vdo{
-display: inline-block;
-}
-#vdo.after{ 
-content: ' ';
-display: inline-block;
-width: 100%;
+text-decoration: none;
 }
 
-.footer{
-    position: absolute;
-    bottom: -500;
-    width: 100%;
-    height: 60px;
-    background-color: #52EF49;
+.fa-phone:before {
+   content: "\f095";
 }
+.fa-github-square:before {
+   content: "\f092";
+}
+.fa-linkedin:before {
+   content: "\f0e1";
+}
+.fa-linkedin-square:before {
+  content: "\f08c";
+}
+/*.footer{
+    position: relative;
+    width: 80%;
+    height: 60px;
+    display: flex;
+    background-color: #52EF49;
+}*/
+
+footer {
+    margin-top: 5px;
+    border-top: 1px solid #E0E0E0;
+    margin-left: 90px;
+    margin-right: auto;
+    padding: 1em;
+    width: 100%;
+}
+
+footer li {
+   display: flex;
+   margin: 0 1.0em;
+}
+
+footer a {
+   text-decoration: none;
+   color: #321;
+ /*  padding: 1.5em; */
+}
+
 </style>
 
 </head>
@@ -97,11 +120,11 @@ width: 100%;
 			<li><a href="/todo.do">Todos</a></li>
 			<li><a href="http://www.yahoo.com">Yahoo</a></li>
 		</ul>
--->
+
 		<ul class="nav navbar-nav navbar-right">
 			<li><a href="#">Login</a></li>
-		</ul>
-
+		</ul>-->
+	<a href="/movie/${genre}">Go Back</a>
 	</nav>
 		<section>
 	<!--  <div class="container">-->
@@ -116,13 +139,10 @@ width: 100%;
    <a href = "/movie/action/add/">Add Movie</a> 	-->
   </section>
 	
-	<section class= "diary diary-primary bg-image">
- <!--	 <img src="C:\Users\ARIGAP\Desktop\VS\images\thinking-girl.jpg">
-	-->
+	<section class= "view view-primary bg-image">
 	<div class="container">
-	<a href="/movie/${genre}">Go Back</a>
 	<div class="title"><h1><span> MOVIE Review for "${title}" </span></h1> </div>
-	<div class="sub-title"> <h2>Read carefully</h2></div>
+	<div class="sub-title"> <h2>Read reviews</h2></div>
 	<c:forEach items="${reviewList}" var="review">
 	         <h2>${review.movieId}</h2>
 	    <br>  
@@ -130,8 +150,15 @@ width: 100%;
 	</div>
 	</section>
 
-	<footer class="footer">
-		<div>About Us</div>
+	<footer>
+		<ul>
+		   <li><a href="#">Contact me<i class="fa fa-phone"></i></a></li>
+		   <li><a href="#">Follow me<i class="fa fa-twitter"></i></a></li>
+		   <li><a href="#">Find me<i class="fa fa-facebook"></i></a></li>
+		   <li><a href="#">Hangout with me<i class="fa fa-plus"></i></a></li>
+		   <li><a href="#">Link me<i class="fa fa-linkedin"></i></a></li>
+		   <li><a href="/www.github.com/mmscomp">Github<i class="fa fa-github"></i></a></li>
+		</ul>
 	</footer>
 
 	<script src="webjars/jquery/1.9.1/jquery.min.js"></script>

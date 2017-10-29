@@ -32,7 +32,7 @@ public class ActionController {
 	@RequestMapping(value={"/movie/Action"}, method=RequestMethod.GET)
 	public String log(Model model){
 		System.out.println("Im 34 inside Action Controller");
-		model.addAttribute("act","action");
+		model.addAttribute("act","Action");
 		model.addAttribute("actionMovie",this.actionService.listActionMovie());
 		System.out.println("1");
 		return "action";
@@ -41,18 +41,18 @@ public class ActionController {
     public String logg(Model model){
     	return "wReview";
     }*/
-	@RequestMapping(value="/movie/action/add",method=RequestMethod.GET)
+	@RequestMapping(value="/movie/Action/add",method=RequestMethod.GET)
 	public String add(Model model){
 		model.addAttribute("genre","Action");
 		return "add";
 	}
-	@RequestMapping(value="/movie/action/add",method=RequestMethod.POST)
+	@RequestMapping(value="/movie/Action/add",method=RequestMethod.POST)
 	public String addActoin(@ModelAttribute("action") Action m){
 		
 		this.actionService.addActionMovie(m);
 		return "redirect:/movie/Action";
 	}
-	@RequestMapping(value="/movie/action/{id}/{uName}",method=RequestMethod.POST)
+	@RequestMapping(value="/movie/Action/{id}/{uName}",method=RequestMethod.POST)
 	public String review(@ModelAttribute("review") String s,@PathVariable("uName")String user,@PathVariable("id")int id){
 		Review r = new Review();
 		System.out.println("000. "+r.getId());
@@ -64,7 +64,7 @@ public class ActionController {
 		this.actionService.reviewActionMovie(r);
 		return "redirect:/movie/Action";
 	}
-    @RequestMapping(value="/movie/action/{title}/{id}/views", method=RequestMethod.GET)
+    @RequestMapping(value="/movie/Action/{title}/{id}/views", method=RequestMethod.GET)
     public String views(Model model,@PathVariable String title, @PathVariable("id") int id){
     	model.addAttribute("genre","Action");
     	System.out.println("I'm inside action controller/views");

@@ -1,4 +1,4 @@
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+ <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@ taglib uri="http://www.springframework.org/tags" prefix="spring"%>
 <%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
 <%@ page session="false"%>
@@ -16,6 +16,11 @@
     margin-right: auto;
     margin-left: auto;
     max-width: 1150px;
+    display: flex;
+  /*  flex: wrap; */
+    justify-content: center;
+    flex-direction: column;
+    align-items: right;
 }
 .diary{
     text-align: left;
@@ -31,7 +36,7 @@
 }
 h1.signUp {
     margin-top: -20px;
-    float: right;
+   /* float: right;*/
 }
 
 h1.signUp:hover {
@@ -66,18 +71,43 @@ color: black; /*white;*/
 color: solid black;
 font-size: 30pt;
 }
-#vdo{
-display: inline-block;
-}
-#vdo.after{
-content: ' ';
-display: inline-block;
+/*.sub-title{
+display: inline-block;*/
+/*flex-direction: column;
+align-items: center;
+}*/
+#vdo {
 width: 100%;
+ display: flex;
+ justify-content: center;
+}
+.mov {
+  width: 50%;
+}
+iframe {
+width: 100%;
+height: 70%;
+}
+#view{
+   width: 50%;
+   text-align: center;
+   
 }
 
+a {
+  text-decoration: none;
+}
+/*
+#vdo.after{
+content: ' ';
+display: flex;
+justify-content: space-start;
+width: 100%;
+}*/
+
 .footer{
-    position: absolute;
-    bottom: -500;
+    position: relative;
+    bottom: 0;
     width: 100%;
     height: 60px;
     background-color: #52EF49;
@@ -103,7 +133,7 @@ width: 100%;
 			<li><a href="#">Login</a></li>
 		</ul>
 
-	</nav>-->
+	</nav>--> 
 		<section>
 	<!--  <div class="container">-->
 		<p>
@@ -115,7 +145,7 @@ width: 100%;
 				<a href="#">Reset your user name and password</a>		
 			    <h1 class="signUp"><a href="#">Sign Up</a></h1>
 -->
-   <a href = "/movie/action/add/">Add Movie</a> 	
+   <a href = "/movie/Action/add/">Add Movie</a> 	
   </section>
 	
 	<section class= "diary diary-primary bg-image">
@@ -123,23 +153,29 @@ width: 100%;
 	-->
 	<div class="container">
 	<a href="/movie">Go Back</a>
-	<div class="title"><h1><span> ACTION MOVIES </span></h1> </div>
-  	<div class="sub-title"> <h2>Select a movie</h2></div>
+	<div class="title"><h1><span> ACTION MOVIES </span></h1>
+  	<div class="sub-title"> <h2>Select a movie</h2>
 	<c:forEach items="${actionMovie}" var="action">
 	  <div id="vdo">
+	   <div class="mov">
 	    <a href="${action.links}">${action.title}</a>   <br>
-	    <iframe src="${action.links}"></iframe><br>
+	    <iframe src="${action.links}"></iframe>
 	    <!--<form action="/movie/action/${action.id}/review" method="post">
 	    Write a review	    <input type=text name=review><input type=submit value=post>
 	    <br><a href="/movie/action/${action.id}/views"> View reviews</a>
 	    <br><br><br>
 	    </form>
 	    -->
+	    </div> 
+	    <div id="view">
 	    <a href=/log/${act}/${action.title}/${action.id} >Write a review</a>
-	    <a href=/movie/${act}/${action.title}/${action.id}/views >View reviews</a>
+	 &emsp;&emsp;&emsp;   <a href=/movie/${act}/${action.title}/${action.id}/views >View reviews</a>
+	</div>
 	</div>
 	                    
 	</c:forEach>
+	</div>
+	</div>
 	</div>
 	</section>
 
