@@ -6,77 +6,11 @@
 <html>
 <head>
 <title>Yahoo!!</title>
+<link href="<c:url value="/resources/css/style.css" />" rel="stylesheet"> 
 <link href="webjars/bootstrap/3.3.6/css/bootstrap.min.css"
 	rel="stylesheet">
 
-<style>
-.container {
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-    max-width: 1150px;
-}
-.diary{
-    text-align: center;
-    color: green;
-    }
-  a {
-     color: black;
-    text-decoration: none;
-}
-.diary-primary{
-    background-color: #656565;
-    color: red;
-    padding-top: 25px;
-    padding-bottom: 160px;
-}
-.diary-primary.bg-image > img{
-    opacity: 0.4;
-}
-h1.signUp {
-    margin-top: -20px;
-    float: right;
-}
 
-h1.signUp:hover {
-   background-color: green;
-   cursor: crosshair;
-}
-
-.bg-image{
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-}
-.bg-image > img {
-    position: absolute;
-    top: -9999px;
-    left: -9999px;
-    bottom: -9999px;
-    right: -9999px;
-    margin: auto;
-}
-h1 > span {
-background-color: red;
-}
-.title>h1{
-color: white;
-}
-h2{
-color: white;
-}
-
-.footer{
-    position: absolute;
-    bottom: -100px;
-    width: 90%;
-    height: 80px;
-    margin-left: 50px;
-    color: white;
-    background-color: black;
-}
-</style>
 
 </head>
 <body>
@@ -113,7 +47,7 @@ color: white;
 	
   </section>
 	-->
-	<section class= "diary diary-primary bg-image">
+	<section class= "movie movie-primary bg-image">
 <!--	 <img src="C:\Users\ARIGAP\Desktop\VS\images\thinking-girl.jpg">
 	-->
 	<div class="container">

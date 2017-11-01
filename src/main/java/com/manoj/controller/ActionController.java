@@ -52,12 +52,13 @@ public class ActionController {
 		this.actionService.addActionMovie(m);
 		return "redirect:/movie/Action";
 	}
-	@RequestMapping(value="/movie/Action/{id}/{uName}",method=RequestMethod.POST)
-	public String review(@ModelAttribute("review") String s,@PathVariable("uName")String user,@PathVariable("id")int id){
+	@RequestMapping(value="/movie/Action/{title}/{id}/{uName}",method=RequestMethod.POST)
+	public String review(@ModelAttribute("name") String s,@PathVariable("title") String title, @PathVariable("uName")String user,@PathVariable("id")int id){
 		Review r = new Review();
-		System.out.println("000. "+r.getId());
+		System.out.println("000. "+r.getId() + s);
 		r.setReview(s);
 		r.setGenre("action");
+		r.setTitle(title);
 		r.setMovieId(id);
 		r.setUser(user);
 		r.setLocation("Atlanta");
@@ -76,5 +77,17 @@ public class ActionController {
     @RequestMapping(value="/movie/login", method=RequestMethod.GET)
     public String logg(Model model){
     	return "login";
+    }
+    @RequestMapping(value="/movie/Action/{rID}", method=RequestMethod.GET)
+    public String delReview(Model model, @PathVariable("rID") int rID){
+      model.addAttribute("id", rID);
+      model.addAttribute("genre","Action");
+      return "delReview";
+    }
+    @RequestMapping(value="/movie/Action/{rID}/remove", method=RequestMethod.POST)
+    public String del(Model model, @PathVariable("rID") int rID){
+      model.addAttribute("id", rID);
+      this.actionService.removeActionMovieReview(rID);
+      return "redirect:/movie/Action";
     }
 }

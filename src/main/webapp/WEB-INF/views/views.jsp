@@ -11,6 +11,7 @@
 <title>Movies Yahoo!!</title>
 <link rel="stylesheet" href="css/font-awesome.css">
 <link rel="stylesheet" href="css/font-awesome.min.css">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 <link href="webjars/bootstrap/3.3.6/css/bootstrap.min.css"
 	rel="stylesheet">
 
@@ -63,7 +64,9 @@ color: solid black;
 font-size: 30pt;
 text-decoration: none;
 }
-
+* {
+   font-family: 'Source Sans Pro' !important;}
+}
 .fa-phone:before {
    content: "\f095";
 }
@@ -75,6 +78,30 @@ text-decoration: none;
 }
 .fa-linkedin-square:before {
   content: "\f08c";
+}
+.review{
+	width: 100%;
+	margin-left:0;
+	margin-right:0;
+display: flex;
+flex-basis: 50%;
+/*flex-direction: column;
+align-items: center;*/
+background: #cdcdcd;
+border-right: 1pt solid blue;
+}
+.user-review {
+	width: 70%;
+	height: auto;
+	border-right: 1pt solid black;
+	background: #ddd;
+}
+.del {
+	width: 29%;
+	margin-left: auto;
+	position: relative;
+	height: auto;
+	background: #eee;
 }
 /*.footer{
     position: relative;
@@ -93,14 +120,18 @@ footer {
     width: 100%;
 }
 
-footer li {
+footer ul {
    display: flex;
-   margin: 0 1.0em;
+   margin: 0; /*1.0em;*/
+   align-items: stretch;
+   justify-content: space-between;
 }
 
 footer a {
    text-decoration: none;
-   color: #321;
+   color: #000;
+   font-weight: 100;
+   font-size: 10pt;
  /*  padding: 1.5em; */
 }
 
@@ -144,7 +175,17 @@ footer a {
 	<div class="title"><h1><span> MOVIE Review for "${title}" </span></h1> </div>
 	<div class="sub-title"> <h2>Read reviews</h2></div>
 	<c:forEach items="${reviewList}" var="review">
-	         <h2>${review.movieId}</h2>
+	    <div class="review">
+	        <div class="user-review">
+	         <h2>${review.user}&nbsp;${review.review}</h2>
+	         <h4>${review.location}</h4>
+	         </div>
+	         
+	         <div class="del">
+	            <a href="/movie/${genre}/${review.id}"><h6>remove</h6></a>
+	         </div>
+	     </div>
+	         
 	    <br>  
 	</c:forEach>
 	</div>
@@ -152,12 +193,13 @@ footer a {
 
 	<footer>
 		<ul>
+		   <li><a href="https://github.com/mmscomp">Github<i class="fa fa-github"></i></a></li>		
 		   <li><a href="#">Contact me<i class="fa fa-phone"></i></a></li>
 		   <li><a href="#">Follow me<i class="fa fa-twitter"></i></a></li>
-		   <li><a href="#">Find me<i class="fa fa-facebook"></i></a></li>
+		   <!-- <li><a href="#">Find me<i class="fa fa-facebook"></i></a></li>-->
 		   <li><a href="#">Hangout with me<i class="fa fa-plus"></i></a></li>
-		   <li><a href="#">Link me<i class="fa fa-linkedin"></i></a></li>
-		   <li><a href="/www.github.com/mmscomp">Github<i class="fa fa-github"></i></a></li>
+		   <li><a href="https://linkedin.com/in/manoj-shrestha">Link me<i class="fa fa-linkedin"></i></a></li>
+		   <li><a href="#">Github<i class="fa fa-github"></i></a></li>
 		</ul>
 	</footer>
 

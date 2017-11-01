@@ -58,5 +58,9 @@ public class ActionService  {
 	public void removeActionMovie(int id) {
 		this.actionDao.removeActionMovie(id);
 	}
+	@Transactional
+	public void removeActionMovieReview(int id) {
+		this.actionDao.removeActionMovieReview(id);
+	}
 
 }

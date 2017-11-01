@@ -8,111 +8,8 @@
 <title>Yahoo!!</title>
 <link href="webjars/bootstrap/3.3.6/css/bootstrap.min.css"
 	rel="stylesheet">
+<link href="<c:url value="/resources/css/style.css" />" rel="stylesheet"> 
 
-<style>
-.container {
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-    max-width: 1150px;
-    display: flex;
-  /*  flex: wrap; */
-    justify-content: center;
-    flex-direction: column;
-    align-items: right;
-}
-.diary{
-    text-align: left;
-}
-.diary-primary{
-    background-color: #999;<!--#594a42;-->
-    color: red;
-    padding-top: 25px;
-    padding-bottom: 160px;
-}
-.diary-primary.bg-image > img{
-    opacity: 0.4;
-}
-h1.signUp {
-    margin-top: -20px;
-   /* float: right;*/
-}
-
-h1.signUp:hover {
-   background-color: green;
-   cursor: crosshair;
-}
-
-.bg-image{
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-}
-.bg-image > img {
-    position: absolute;
-    top: -9999px;
-    left: -9999px;
-    bottom: -9999px;
-    right: -9999px;
-    margin: auto;
-}
-h1 > span {
-background-color: red;
-}
-.title>h1{
-color: white;
-text-align: center;
-}
-h2{
-color: black; /*white;*/
-}
-.container>a{ 
-color: solid black;
-font-size: 30pt;
-}
-/*.sub-title{
-display: inline-block;*/
-/*flex-direction: column;
-align-items: center;
-}*/
-#vdo {
-width: 100%;
- display: flex;
- justify-content: center;
-}
-.mov {
-  width: 50%;
-}
-iframe {
-width: 100%;
-height: 70%;
-}
-#view{
-   width: 50%;
-   text-align: center;
-   
-}
-
-a {
-  text-decoration: none;
-}
-/*
-#vdo.after{
-content: ' ';
-display: flex;
-justify-content: space-start;
-width: 100%;
-}*/
-
-.footer{
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    height: 60px;
-    background-color: #52EF49;
-}
-</style>
 
 </head>
 <body>
@@ -148,13 +45,13 @@ width: 100%;
    <a href = "/movie/Action/add/">Add Movie</a> 	
   </section>
 	
-	<section class= "diary diary-primary bg-image">
+	<section class= "film film-primary bg-image">
 <!--	 <img src="C:\Users\ARIGAP\Desktop\VS\images\thinking-girl.jpg">
 	-->
-	<div class="container">
+	<div class="film-container">
 	<a href="/movie">Go Back</a>
-	<div class="title"><h1><span> ACTION MOVIES </span></h1>
-  	<div class="sub-title"> <h2>Select a movie</h2>
+	<div class="film-title"><h1><span> ACTION MOVIES </span></h1>
+  	<div class="film-sub-title"> <h2>Select a movie</h2>
 	<c:forEach items="${actionMovie}" var="action">
 	  <div id="vdo">
 	   <div class="mov">

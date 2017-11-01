@@ -81,5 +81,13 @@ public class ActionDao {
 		}
 		logger.info("Diary deleted successfully, diary details="+l);
 	}
+	public void removeActionMovieReview(int id) {
+		Session session = this.sessionFactory.getCurrentSession();
+		Review l = (Review) session.load(Review.class, new Integer(id));
+		if(null != l){
+			session.delete(l);
+		}
+		logger.info("Review deleted successfully, review details="+l);
+	}
 
 } 

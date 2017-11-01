@@ -89,7 +89,7 @@ h1.signUp:hover {
 		<p>
 			<font color=red>${errorMessage }</font>
 		</p>
-		<form action="/movie/${genre}/${mId}/${username}" method=POST>
+		<form action="/movie/${genre}/${title}/${mId}/${username}" method=POST>
 			Your comment: <input name=name type=text /><input type=submit value="go" />
 		</form>
 	        <a href=/log/ >Go Back</a>

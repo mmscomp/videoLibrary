@@ -53,11 +53,12 @@ public class LoginController {
     	return "reset";
     }
 	
-	@RequestMapping(value = "/log/{genre}/{id}/verify", method = RequestMethod.POST)
-	public String loginVerify(@PathVariable("id") int mId,@PathVariable("genre") String gen,Model model,HttpServletRequest req, HttpServletResponse res){//("firstName")String name
+	@RequestMapping(value = "/log/{genre}/{title}/{id}/verify", method = RequestMethod.POST)
+	public String loginVerify(@PathVariable("id") int mId,@PathVariable("title") String title, @PathVariable("genre") String gen,Model model,HttpServletRequest req, HttpServletResponse res){//("firstName")String name
 			//(,@ModelAttribute("lastName") String passwd) {
 		model.addAttribute("mId", mId);
 		model.addAttribute("genre",gen);
+		model.addAttribute("title", title);
 		String name = req.getParameter("name");
 		String pw = req.getParameter("password");
 		model.addAttribute("listPerson", this.loginService.loginListPerson());

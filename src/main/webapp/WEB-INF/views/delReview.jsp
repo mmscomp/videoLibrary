@@ -49,8 +49,8 @@ h1.signUp:hover {
 }
 
 .footer{
-    position: relative;
-    bottom: -290px;
+    position: absolute;
+    bottom: 0;
     width: 100%;
     height: 60px;
     background-color: #52EF49;
@@ -80,26 +80,21 @@ h1.signUp:hover {
 	<section class= "diary diary-primary bg-image">
 	 <!-- <img src="C:\Users\ARIGAP\Desktop\VS\images\thinking-girl.jpg" alt="NOT FOUND">-->
 	<div class="container">
-	<div class="title"><h1> Here you are </h1> </div>
-	<div class="sub-title"> <h3>to record your today's experience</h3></div>
 	</div>
 	</section>
 	<section>
 	<!--  <div class="container">-->
-		<p>
+		<p>${id}
 			<font color=red>${errorMessage }</font>
 		</p>
-		<form action="/log/${genre}/${title}/${mId}/verify" method=POST>
-			User name: <input name=name type=text /> Password:<input
-				name=password type=password><input type=submit value="Login" />
-				<a href="/log/reset">Reset your user name and password</a>		
-			    <h1 class="signUp"><a href="/log/register">Sign Up</a></h1>
+		<form action="/movie/${genre}/${id}/remove" method=POST>
+			Do you really want to delete? <input type=submit value="remove"/>
 		</form>
-	
+	        <a href=/movie/${genre}/ >Cancel</a>
   </section>
 
 	<footer class="footer">
-		<div>About U</div>
+		<div>About Us</div>
 	</footer>
 
 	<script src="webjars/jquery/1.9.1/jquery.min.js"></script>
