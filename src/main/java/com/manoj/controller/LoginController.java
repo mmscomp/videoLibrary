@@ -40,11 +40,11 @@ public class LoginController {
 	//	System.out.println(this.personService.listPerson());
 		return "login";
 	}
-	@RequestMapping(value = "/log/{genre}/{title}/{id}/register", method = RequestMethod.GET)
-	public String register(Model model, @PathVariable String genre, @PathVariable String title, @PathVariable int id) {
-		model.addAttribute("genre", genre);
+	@RequestMapping(value = "/log/register", method = RequestMethod.GET)
+	public String register(Model model) {
+	/*	model.addAttribute("genre", genre);
 		model.addAttribute("title", title);
-		model.addAttribute("id", id);
+		model.addAttribute("id", id);*/
 	//	System.out.println(this.personService.listPerson());
 		return "register";
 	}

@@ -74,6 +74,18 @@ display: inline-block;
 width: 100%;
 }
 
+input > .one {
+  width: 20%;
+}
+
+.two,.three {
+  width:30%;
+}
+
+input > #11 {
+  width: 10%;
+}
+
 .footer{
     position: absolute;
     bottom: -500;
@@ -117,10 +129,10 @@ width: 100%;
 
    <a href="/movie/${genre}/">Go Back</a>
    <form action = "/movie/${genre}/add/" method="post">
-   Title:<input type=text name=title >
-   Casting:  <input type=text name=casting>
-   URLs: <input type=text name=links>
-   <input type=submit value=add />
+   Title:<input class="one" type=text name=title >
+   Casting:  <input class="two" type=text name=casting>
+   URLs: <input class="three" type=text name=links>
+   <input id="11" type=submit value=add />
    </form> 
   </section>
 

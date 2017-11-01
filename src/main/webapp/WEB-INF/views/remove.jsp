@@ -80,20 +80,17 @@ h1.signUp:hover {
 	<section class= "diary diary-primary bg-image">
 	 <!-- <img src="C:\Users\ARIGAP\Desktop\VS\images\thinking-girl.jpg" alt="NOT FOUND">-->
 	<div class="container">
-	<div class="title"><h1> Here you are </h1> </div>
-	<div class="sub-title"> <h3>to record your today's experience</h3></div>
 	</div>
 	</section>
 	<section>
 	<!--  <div class="container">-->
-		<p>
+		<p>${id}
 			<font color=red>${errorMessage }</font>
 		</p>
-		<form action="/movie/${genre}/${title}/${mId}/${username}" method=POST>
-			Your comment: <input name=name type=text />
-			You are in:   <input name=loc type=texr /><input type=submit value="go" />
+		<form action="/movie/${genre}/${id}/delete" method=POST>
+			Do you really want to delete? <input type=submit value="remove"/>
 		</form>
-	        <a href=/log/${genre}/${title}/${mId} >Go Back</a>
+	        <a href=/movie/${genre}/ >Cancel</a>
   </section>
 
 	<footer class="footer">

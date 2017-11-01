@@ -31,7 +31,7 @@
 		</ul>
 
 	</nav>--> 
-		<section>
+		<section class="top">
 	<!--  <div class="container">-->
 		<p>
 			<font color=red>${errorMessage }</font>
@@ -42,7 +42,12 @@
 				<a href="#">Reset your user name and password</a>		
 			    <h1 class="signUp"><a href="#">Sign Up</a></h1>
 -->
-   <a href = "/movie/Action/add/">Add Movie</a> 	
+  <div class="add-movie">
+   <a href = "/movie/Action/add/">Add Movie</a> 
+   </div>
+   <div class="remove-movie">
+   <a href= "#">Remove Movie</a>
+   </div>	
   </section>
 	
 	<section class= "film film-primary bg-image">
@@ -55,7 +60,15 @@
 	<c:forEach items="${actionMovie}" var="action">
 	  <div id="vdo">
 	   <div class="mov">
-	    <a href="${action.links}">${action.title}</a>   <br>
+	   <div class="mov-1">
+	   <div class="1">
+	    <a href="${action.links}">${action.title}</a>
+	    </div>
+	    <div class="2">
+	    <a href="/movie/Action/${action.id}/delete">Remove</a>
+	    </div>
+	    </div> 
+	       <br>
 	    <iframe src="${action.links}"></iframe>
 	    <!--<form action="/movie/action/${action.id}/review" method="post">
 	    Write a review	    <input type=text name=review><input type=submit value=post>

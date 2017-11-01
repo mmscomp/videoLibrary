@@ -45,7 +45,7 @@
 			First Name: <input name=firstName type=text /><br><br>
 		    Last Name: <input name=lastName type=text /><br><br> 
 		    <br><br><input type=submit value="Register" />
-				
+				 
 		</form>
 	</div>
 

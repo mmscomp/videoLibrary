@@ -79,7 +79,7 @@ public class ActionDao {
 		if(null != l){
 			session.delete(l);
 		}
-		logger.info("Diary deleted successfully, diary details="+l);
+		logger.info("Action movie deleted successfully, movie details="+l);
 	}
 	public void removeActionMovieReview(int id) {
 		Session session = this.sessionFactory.getCurrentSession();

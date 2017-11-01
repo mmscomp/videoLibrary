@@ -177,7 +177,7 @@ footer a {
 	<c:forEach items="${reviewList}" var="review">
 	    <div class="review">
 	        <div class="user-review">
-	         <h2>${review.user}&nbsp;${review.review}</h2>
+	         <h2>${review.user}&nbsp;&emsp;&emsp;${review.review}</h2>
 	         <h4>${review.location}</h4>
 	         </div>
 	         

@@ -37,7 +37,7 @@ public class MovieController {
 	}
 	@RequestMapping(value="/movie/add", method=RequestMethod.GET)
 	public String add(Model model){
-		model.addAttribute("genre","");
+ 		model.addAttribute("genre","");
 		return "add";		
 	}
 }

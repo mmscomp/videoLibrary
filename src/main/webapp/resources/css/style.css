@@ -154,8 +154,21 @@ width: 100%;
  display: flex;
  justify-content: center;
 }
-.mov {
-  width: 50%;
+.mov {width: 60%}
+.mov-1 {
+	display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: bottom;
+}
+.1 {
+	width: 50%;
+	text-align: left;
+	background: ligtblue;
+}
+.2 {
+	width: 50%;
+	text-align: right;
 }
 iframe {
 width: 100%;
@@ -169,6 +182,27 @@ height: 70%;
 
 a {
   text-decoration: none;
+}
+.top{
+	display: flex;
+	justify-content: space-between;
+}
+
+.add-movie {
+	width: 50%;
+	height: auto;
+	margin-left: 0;
+	
+	background: blue;
+}
+
+.remove-movie {
+	width: 50%;
+	height: auto;
+	text-align: right;
+	/*vertical-align: middle;*/
+	margin-right: 0;
+	background: red;
 }
 /*
 #vdo.after{

@@ -52,8 +52,22 @@ public class ActionController {
 		this.actionService.addActionMovie(m);
 		return "redirect:/movie/Action";
 	}
+	@RequestMapping(value="/movie/Action/{id}/delete",method=RequestMethod.GET)
+	public String remove(Model model, @PathVariable("id") int id){
+		model.addAttribute("genre","Action");
+		model.addAttribute("id", id);
+		return "remove";
+	}
+	@RequestMapping(value="/movie/Action/{id}/delete",method=RequestMethod.POST)
+	public String removeAction(Model model, @PathVariable("id") int id){
+		
+		this.actionService.removeActionMovie(id);
+		return "redirect:/movie/Action";
+	}
+
+	
 	@RequestMapping(value="/movie/Action/{title}/{id}/{uName}",method=RequestMethod.POST)
-	public String review(@ModelAttribute("name") String s,@PathVariable("title") String title, @PathVariable("uName")String user,@PathVariable("id")int id){
+	public String review(@ModelAttribute("name") String s, @ModelAttribute("loc") String location, @PathVariable("title") String title, @PathVariable("uName")String user,@PathVariable("id")int id){
 		Review r = new Review();
 		System.out.println("000. "+r.getId() + s);
 		r.setReview(s);
@@ -61,7 +75,7 @@ public class ActionController {
 		r.setTitle(title);
 		r.setMovieId(id);
 		r.setUser(user);
-		r.setLocation("Atlanta");
+		r.setLocation(location);
 		this.actionService.reviewActionMovie(r);
 		return "redirect:/movie/Action";
 	}
