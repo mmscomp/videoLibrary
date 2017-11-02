@@ -3,10 +3,12 @@ C:\Users\ARIGAP\Desktop\Manoj\videoLibrary\src\main\java\com\manoj\model\Person.
 C:\Users\ARIGAP\Desktop\Manoj\videoLibrary\src\main\java\com\manoj\service\LoginService.java
 C:\Users\ARIGAP\Desktop\Manoj\videoLibrary\src\main\java\com\manoj\service\PersonService.java
 C:\Users\ARIGAP\Desktop\Manoj\videoLibrary\src\main\java\com\manoj\dao\LoginDao.java
+C:\Users\ARIGAP\Desktop\Manoj\videoLibrary\src\main\java\com\manoj\dao\ComedyDao.java
 C:\Users\ARIGAP\Desktop\Manoj\videoLibrary\src\main\java\com\manoj\service\MovieService.java
 C:\Users\ARIGAP\Desktop\Manoj\videoLibrary\src\main\java\com\manoj\dao\PersonDao.java
 C:\Users\ARIGAP\Desktop\Manoj\videoLibrary\src\main\java\com\manoj\controller\ActionController.java
 C:\Users\ARIGAP\Desktop\Manoj\videoLibrary\src\main\java\com\manoj\controller\LoginController.java
+C:\Users\ARIGAP\Desktop\Manoj\videoLibrary\src\main\java\com\manoj\service\ComedyService.java
 C:\Users\ARIGAP\Desktop\Manoj\videoLibrary\src\main\java\com\manoj\model\Action.java
 C:\Users\ARIGAP\Desktop\Manoj\videoLibrary\src\main\java\com\manoj\controller\PersonController.java
 C:\Users\ARIGAP\Desktop\Manoj\videoLibrary\src\main\java\com\manoj\model\Login.java
@@ -14,5 +16,6 @@ C:\Users\ARIGAP\Desktop\Manoj\videoLibrary\src\main\java\com\manoj\controller\Mo
 C:\Users\ARIGAP\Desktop\Manoj\videoLibrary\src\main\java\com\manoj\model\Review.java
 C:\Users\ARIGAP\Desktop\Manoj\videoLibrary\src\main\java\com\manoj\service\ActionService.java
 C:\Users\ARIGAP\Desktop\Manoj\videoLibrary\src\main\java\com\manoj\dao\ActionDao.java
+C:\Users\ARIGAP\Desktop\Manoj\videoLibrary\src\main\java\com\manoj\controller\ComedyController.java
 C:\Users\ARIGAP\Desktop\Manoj\videoLibrary\src\main\java\com\manoj\dao\MovieDao.java
 C:\Users\ARIGAP\Desktop\Manoj\videoLibrary\src\main\java\com\manoj\model\Movie.java

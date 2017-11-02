@@ -92,7 +92,15 @@
 	<beans:bean id="actionService" class="com.manoj.service.ActionService">
 		<beans:property name="actionDao" ref="actionDao"></beans:property>
 	</beans:bean>
+	
+	<beans:bean id="comedyDao" class="com.manoj.dao.ComedyDao">
+		<beans:property name="sessionFactory"
+			ref="hibernate4AnnotatedSessionFactory" />
+	</beans:bean>
 
+	<beans:bean id="comedyService" class="com.manoj.service.ComedyService">
+		<beans:property name="comedyDao" ref="comedyDao"></beans:property>
+	</beans:bean>
 	<context:component-scan base-package="com.manoj" >
 	             <context:include-filter type="aspectj" expression="com.manoj.*" />
 	                 </context:component-scan>
