@@ -191,18 +191,18 @@ a {
 .add-movie {
 	width: 50%;
 	height: auto;
-	margin-left: 0;
-	
+	margin-right: 0;
+	text-align: center;	
 	background: blue;
 }
 
-.remove-movie {
+.home {
 	width: 50%;
 	height: auto;
-	text-align: right;
+	text-align: left;
 	/*vertical-align: middle;*/
-	margin-right: 0;
-	background: red;
+	margin-left: 0;
+	background: lightblue;
 }
 /*
 #vdo.after{
@@ -218,4 +218,132 @@ width: 100%;
     width: 100%;
     height: 60px;
     background-color: #52EF49;
+}
+.view{
+    text-align: left;
+}
+.view-primary{
+    background-color: #dcb;<!--#594a42;-->
+    color: red;
+    padding-top: 25px;
+    padding-bottom: 160px;
+}
+.view-primary.bg-image > img{
+    opacity: 0.4;
+}
+.bg-image{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+.bg-image > img {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+    bottom: -9999px;
+    right: -9999px;
+    margin: auto;
+}
+h1 > span {
+background-color: black;
+text-align: center;
+}
+.title>h1{
+color: white;
+text-align: center;
+}
+h2{
+color: black;
+}
+/*a{
+color: solid black;
+font-size: 30pt;
+text-decoration: none;
+}*/
+* {
+   font-family: 'Source Sans Pro' !important;}
+}
+.fa-phone:before {
+   content: "\f095";
+}
+.fa-github-square:before {
+   content: "\f092";
+}
+.fa-linkedin:before {
+   content: "\f0e1";
+}
+.fa-linkedin-square:before {
+  content: "\f08c";
+}
+.review{
+	width: 100%;
+	margin-left:0;
+	margin-right:0;
+display: flex;
+flex-basis: 50%;
+/*flex-direction: column;
+align-items: center;*/
+background: #cdcdcd;
+border-right: 1pt solid blue;
+}
+.user-review {
+	width: 90%;
+	height: auto;
+	display: flex;
+	justify-content: space-between;
+	border-right: 1pt solid black;
+	background: #ddd;
+}
+.use {
+	width: 20%;
+	margin: 0;
+	color: gray;
+}
+.use > h2 {
+	color: blue;
+}
+.rev {
+	width: 80%;
+}
+.del {
+	width: 9%;
+	margin-left: auto;
+	position: relative;
+	text-align: center;
+	vertical-align: middle;
+	height: auto;
+	background: #eee;
+}
+/*.footer{
+    position: relative;
+    width: 80%;
+    height: 60px;
+    display: flex;
+    background-color: #52EF49;
+}*/
+h3 {
+	color: red;
+}
+footer {
+    margin-top: 5px;
+    border-top: 1px solid #E0E0E0;
+    margin-left: 90px;
+    margin-right: auto;
+    padding: 1em;
+    width: 100%;
+}
+
+footer ul {
+   display: flex;
+   margin: 0; /*1.0em;*/
+   align-items: stretch;
+   justify-content: space-between;
+}
+
+footer a {
+   text-decoration: none;
+   color: #000;
+   font-weight: 100;
+   font-size: 10pt;
+ /*  padding: 1.5em; */
 }

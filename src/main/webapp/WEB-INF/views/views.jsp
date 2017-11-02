@@ -15,7 +15,7 @@
 <link href="webjars/bootstrap/3.3.6/css/bootstrap.min.css"
 	rel="stylesheet">
 
-<style>
+<!-- <style>
 .container {
     padding-right: 15px;
     padding-left: 15px;
@@ -27,7 +27,7 @@
     text-align: left;
 }
 .view-primary{
-    background-color: #dcb;<!--#594a42;-->
+    background-color: #dcb;
     color: red;
     padding-top: 25px;
     padding-bottom: 160px;
@@ -135,7 +135,8 @@ footer a {
  /*  padding: 1.5em; */
 }
 
-</style>
+</style>-->
+<link href="<c:url value="/resources/css/style.css" />" rel="stylesheet"> 
 
 </head>
 <body>
@@ -177,12 +178,18 @@ footer a {
 	<c:forEach items="${reviewList}" var="review">
 	    <div class="review">
 	        <div class="user-review">
-	         <h2>${review.user}&nbsp;&emsp;&emsp;${review.review}</h2>
+	         <div class="use">
+	         <h2>${review.user}</h2>
 	         <h4>${review.location}</h4>
+	         </div>
+	         <div class="rev">
+	         <p>${review.review}</p>
+	         </div>
+	         
 	         </div>
 	         
 	         <div class="del">
-	            <a href="/movie/${genre}/${review.id}"><h6>remove</h6></a>
+	            <a href="/movie/${genre}/${review.id}"><h3>remove</h3></a>
 	         </div>
 	     </div>
 	         

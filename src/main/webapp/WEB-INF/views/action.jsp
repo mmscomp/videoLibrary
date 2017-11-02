@@ -42,11 +42,11 @@
 				<a href="#">Reset your user name and password</a>		
 			    <h1 class="signUp"><a href="#">Sign Up</a></h1>
 -->
-  <div class="add-movie">
-   <a href = "/movie/Action/add/">Add Movie</a> 
+   <div class="home">
+   <a href= "/movie">Home</a>
    </div>
-   <div class="remove-movie">
-   <a href= "#">Remove Movie</a>
+     <div class="add-movie">
+   <a href = "/movie/Action/add/">Add Movie</a> 
    </div>	
   </section>
 	
@@ -54,7 +54,7 @@
 <!--	 <img src="C:\Users\ARIGAP\Desktop\VS\images\thinking-girl.jpg">
 	-->
 	<div class="film-container">
-	<a href="/movie">Go Back</a>
+	
 	<div class="film-title"><h1><span> ACTION MOVIES </span></h1>
   	<div class="film-sub-title"> <h2>Select a movie</h2>
 	<c:forEach items="${actionMovie}" var="action">
