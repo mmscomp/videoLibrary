@@ -48,6 +48,7 @@
 				<beans:value>com.manoj.model.Movie</beans:value>
 				<beans:value>com.manoj.model.Action</beans:value>
 				<beans:value>com.manoj.model.Comedy</beans:value>
+				<beans:value>com.manoj.model.Drama</beans:value>
 			</beans:list>
 		</beans:property>
 		<beans:property name="hibernateProperties">
@@ -101,6 +102,16 @@
 	<beans:bean id="comedyService" class="com.manoj.service.ComedyService">
 		<beans:property name="comedyDao" ref="comedyDao"></beans:property>
 	</beans:bean>
+	<beans:bean id="dramaDao" class="com.manoj.dao.DramaDao">
+		<beans:property name="sessionFactory"
+			ref="hibernate4AnnotatedSessionFactory" />
+	</beans:bean>
+
+	<beans:bean id="dramaService" class="com.manoj.service.DramaService">
+		<beans:property name="dramaDao" ref="dramaDao"></beans:property>
+	</beans:bean>
+
+
 	<context:component-scan base-package="com.manoj" >
 	             <context:include-filter type="aspectj" expression="com.manoj.*" />
 	                 </context:component-scan>
