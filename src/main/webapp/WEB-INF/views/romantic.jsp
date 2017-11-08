@@ -46,7 +46,7 @@
    <a href= "/movie">Home</a>
    </div>
      <div class="add-movie">
-   <a href = "/movie/Action/add/">Add Movie</a> 
+   <a href = "/movie/Romantic/add/">Add Movie</a> 
    </div>	
   </section>
 	
@@ -57,7 +57,7 @@
 	
 	<div class="film-title"><h1><span> ROMANTIC MOVIES </span></h1>
   	<div class="film-sub-title"> <h2>Select a movie</h2>
-	<c:forEach items="${romanticMovie}" var="action">
+	<c:forEach items="${romanticMovie}" var="romantic">
 	  <div id="vdo">
 	   <div class="mov">
 	   <div class="mov-1">
