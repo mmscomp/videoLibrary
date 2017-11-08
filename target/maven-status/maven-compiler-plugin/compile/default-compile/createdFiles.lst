@@ -1,3 +1,4 @@
+com\manoj\controller\RomanticController.class
 com\manoj\dao\MovieDao.class
 com\manoj\controller\PersonController.class
 com\manoj\controller\ActionController.class
@@ -6,8 +7,11 @@ com\manoj\service\LoginService.class
 com\manoj\dao\LoginDao.class
 com\manoj\service\PersonService.class
 com\manoj\service\ActionService.class
+com\manoj\dao\RomanticDao.class
 com\manoj\service\MovieService.class
+com\manoj\service\RomanticService.class
 com\manoj\model\Movie.class
+com\manoj\model\Romantic.class
 com\manoj\controller\MovieController.class
 com\manoj\model\Login.class
 com\manoj\model\Person.class
