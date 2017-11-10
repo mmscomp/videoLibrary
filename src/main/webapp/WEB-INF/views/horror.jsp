@@ -46,7 +46,7 @@
    <a href= "/movie">Home</a>
    </div>
      <div class="add-movie">
-   <a href = "/movie/Romantic/add/">Add Movie</a> 
+   <a href = "/movie/Horror/add/">Add Movie</a> 
    </div>	
   </section>
 	
@@ -55,21 +55,21 @@
 	-->
 	<div class="film-container">
 	
-	<div class="film-title"><h1><span> ROMANTIC MOVIES </span></h1>
+	<div class="film-title"><h1><span> HORROR MOVIES </span></h1>
   	<div class="film-sub-title"> <h2>Select a movie</h2>
-	<c:forEach items="${romanticMovie}" var="romantic">
+	<c:forEach items="${horrorMovie}" var="horror">
 	  <div id="vdo">
 	   <div class="mov">
 	   <div class="mov-1">
 	   <div class="1">
-	    <a href="${romantic.links}">${romantic.title}</a>
+	    <a href="${horror.links}">${horror.title}</a>
 	    </div>
 	    <div class="2">
-	    <a href="/movie/Romantic/${romantic.id}/delete">Remove</a>
+	    <a href="/movie/Horror/${horror.id}/delete">Remove</a>
 	    </div>
 	    </div> 
 	       <br>
-	    <iframe src="${romantic.links}"></iframe>
+	    <iframe src="${horror.links}"></iframe>
 	    <!--<form action="/movie/action/${action.id}/review" method="post">
 	    Write a review	    <input type=text name=review><input type=submit value=post>
 	    <br><a href="/movie/action/${action.id}/views"> View reviews</a>
@@ -78,8 +78,8 @@
 	    -->
 	    </div>  
 	    <div id="view">
-	    <a href=/log/${romantic}/${romantic.title}/${romantic.id} >Write a review</a>
-	 &emsp;&emsp;&emsp;   <a href=/movie/${romantic}/${romantic.title}/${romantic.id}/views >View reviews</a>
+	    <a href=/log/${romantic}/${romantic.title}/${horror.id} >Write a review</a>
+	 &emsp;&emsp;&emsp;   <a href=/movie/${horror}/${horror.title}/${romantic.id}/views >View reviews</a>
 	</div>
 	</div>
 	                    

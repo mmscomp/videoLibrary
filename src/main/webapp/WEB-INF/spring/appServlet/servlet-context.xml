@@ -50,7 +50,7 @@
 				<beans:value>com.manoj.model.Comedy</beans:value>
 				<beans:value>com.manoj.model.Drama</beans:value>
 				<beans:value>com.manoj.model.Romantic</beans:value>
-
+			<beans:value>com.manoj.model.Horror</beans:value>
 			</beans:list>
 		</beans:property>
 		<beans:property name="hibernateProperties">
@@ -113,6 +113,14 @@
 		<beans:property name="dramaDao" ref="dramaDao"></beans:property>
 	</beans:bean>
 	<beans:bean id="romanticDao" class="com.manoj.dao.RomanticDao">
+		<beans:property name="sessionFactory"
+			ref="hibernate4AnnotatedSessionFactory" />
+	</beans:bean>
+
+	<beans:bean id="horrorService" class="com.manoj.service.HorrorService">
+		<beans:property name="horrorDao" ref="horrorDao"></beans:property>
+	</beans:bean>
+	<beans:bean id="horrorDao" class="com.manoj.dao.HorrorDao">
 		<beans:property name="sessionFactory"
 			ref="hibernate4AnnotatedSessionFactory" />
 	</beans:bean>

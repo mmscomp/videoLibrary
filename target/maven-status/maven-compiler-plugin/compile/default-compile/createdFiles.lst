@@ -1,4 +1,6 @@
+com\manoj\model\Horror.class
 com\manoj\controller\RomanticController.class
+com\manoj\dao\HorrorDao.class
 com\manoj\dao\MovieDao.class
 com\manoj\controller\PersonController.class
 com\manoj\controller\ActionController.class
@@ -15,8 +17,10 @@ com\manoj\model\Romantic.class
 com\manoj\controller\MovieController.class
 com\manoj\model\Login.class
 com\manoj\model\Person.class
+com\manoj\service\HorrorService.class
 com\manoj\controller\LoginController.class
 com\manoj\model\Comedy.class
 com\manoj\model\Review.class
+com\manoj\controller\HorrorController.class
 com\manoj\dao\ActionDao.class
 com\manoj\dao\PersonDao.class
