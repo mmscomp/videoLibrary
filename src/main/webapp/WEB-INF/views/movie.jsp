@@ -56,6 +56,7 @@
 	<c:forEach items="${movie}" var="movie">
 	    <a href="/movie/${movie.genre}" target="_top"><h3>${movie.genre}</h3></a>
 	</c:forEach>
+	   
 	</div>
 	</section>
 
