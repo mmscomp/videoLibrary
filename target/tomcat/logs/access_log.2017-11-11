@@ -8,3 +8,7 @@
 0:0:0:0:0:0:0:1 - - [11/Nov/2017:21:09:33 -0500] "GET /webjars/bootstrap/3.3.6/css/bootstrap.min.css HTTP/1.1" 404 949 http-bio-9090-exec-1 5
 0:0:0:0:0:0:0:1 - - [11/Nov/2017:21:09:33 -0500] "GET /webjars/jquery/1.9.1/jquery.min.js HTTP/1.1" 404 949 http-bio-9090-exec-8 56
 0:0:0:0:0:0:0:1 - - [11/Nov/2017:21:09:33 -0500] "GET /webjars/bootstrap/3.3.6/js/bootstrap.min.js HTTP/1.1" 404 949 http-bio-9090-exec-7 43
+0:0:0:0:0:0:0:1 - - [11/Nov/2017:21:09:46 -0500] "GET /movie/Live%20TV HTTP/1.1" 404 949 http-bio-9090-exec-4 136
+0:0:0:0:0:0:0:1 - - [11/Nov/2017:21:09:49 -0500] "GET /webjars/bootstrap/3.3.6/js/bootstrap.min.js HTTP/1.1" 404 949 http-bio-9090-exec-4 63
+0:0:0:0:0:0:0:1 - - [11/Nov/2017:21:09:49 -0500] "GET /webjars/jquery/1.9.1/jquery.min.js HTTP/1.1" 404 949 http-bio-9090-exec-3 6
+0:0:0:0:0:0:0:1 - - [11/Nov/2017:21:09:49 -0500] "GET /webjars/bootstrap/3.3.6/css/bootstrap.min.css HTTP/1.1" 404 949 http-bio-9090-exec-2 98

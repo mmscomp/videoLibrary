@@ -51,6 +51,8 @@
 				<beans:value>com.manoj.model.Drama</beans:value>
 				<beans:value>com.manoj.model.Romantic</beans:value>
 			<beans:value>com.manoj.model.Horror</beans:value>
+			<beans:value>com.manoj.model.LiveTV</beans:value>
+			
 			</beans:list>
 		</beans:property>
 		<beans:property name="hibernateProperties">
@@ -112,6 +114,10 @@
 	<beans:bean id="dramaService" class="com.manoj.service.DramaService">
 		<beans:property name="dramaDao" ref="dramaDao"></beans:property>
 	</beans:bean>
+	<beans:bean id="romanticService" class="com.manoj.service.RomanticService">
+		<beans:property name="romanticDao" ref="romanticDao"></beans:property>
+	</beans:bean>
+
 	<beans:bean id="romanticDao" class="com.manoj.dao.RomanticDao">
 		<beans:property name="sessionFactory"
 			ref="hibernate4AnnotatedSessionFactory" />
@@ -125,8 +131,12 @@
 			ref="hibernate4AnnotatedSessionFactory" />
 	</beans:bean>
 
-	<beans:bean id="romanticService" class="com.manoj.service.RomanticService">
-		<beans:property name="romanticDao" ref="romanticDao"></beans:property>
+	<beans:bean id="liveTVService" class="com.manoj.service.LiveTVService">
+		<beans:property name="liveTVDao" ref="liveTVDao"></beans:property>
+	</beans:bean>
+	<beans:bean id="liveTvDao" class="com.manoj.dao.LiveTVDao">
+		<beans:property name="sessionFactory"
+			ref="hibernate4AnnotatedSessionFactory" />
 	</beans:bean>
 
 
