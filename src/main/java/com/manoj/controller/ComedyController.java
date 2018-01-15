@@ -29,7 +29,7 @@ public class ComedyController {
 	public void setMovieService(ComedyService cs){
 		this.comedyService = cs;
 	}
-	@RequestMapping(value={"/movie/Comedy"}, method=RequestMethod.GET)
+	@RequestMapping(value={" /movie/Comedy"}, method=RequestMethod.GET)
 	public String log(Model model){
 		System.out.println("Im 34 inside Comedy Controller");
 		model.addAttribute("comedy","Comedy");

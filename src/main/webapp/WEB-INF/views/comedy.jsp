@@ -1,4 +1,4 @@
- <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@ taglib uri="http://www.springframework.org/tags" prefix="spring"%>
 <%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
 <%@ page session="false"%>
@@ -78,8 +78,8 @@
 	    -->
 	    </div> 
 	    <div id="view">
-	    <a href=/log/${comedy}/${comedy.title}/${comedy.id} >Write a review</a>
-	 &emsp;&emsp;&emsp;   <a href=/movie/${comedy}/${comedy.title}/${comedy.id}/views >View reviews</a>
+	    <a href="/log/Comedy/${comedy.title}/${comedy.id}">Write a review</a>
+	 &emsp;&emsp;&emsp;   <a href="/movie/comedy/${comedy.title}/${comedy.id}/views" >View reviews</a>
 	</div>
 	</div>
 	                    

@@ -1,7 +1,10 @@
+com\manoj\service\ComedyService.class
 com\manoj\model\Horror.class
 com\manoj\controller\RomanticController.class
 com\manoj\dao\HorrorDao.class
 com\manoj\dao\MovieDao.class
+com\manoj\service\DramaService.class
+com\manoj\controller\ComedyController.class
 com\manoj\controller\PersonController.class
 com\manoj\controller\ActionController.class
 com\manoj\model\Action.class
@@ -14,10 +17,13 @@ com\manoj\service\MovieService.class
 com\manoj\service\RomanticService.class
 com\manoj\model\Movie.class
 com\manoj\model\Romantic.class
+com\manoj\controller\DramaController.class
 com\manoj\dao\LiveTVDao.class
 com\manoj\controller\MovieController.class
 com\manoj\model\Login.class
+com\manoj\dao\ComedyDao.class
 com\manoj\model\Person.class
+com\manoj\dao\DramaDao.class
 com\manoj\service\HorrorService.class
 com\manoj\service\LiveTVService.class
 com\manoj\controller\LoginController.class
@@ -25,6 +31,7 @@ com\manoj\controller\LiveTVController.class
 com\manoj\model\Comedy.class
 com\manoj\model\Review.class
 com\manoj\controller\HorrorController.class
+com\manoj\model\Drama.class
 com\manoj\model\LiveTV.class
 com\manoj\dao\ActionDao.class
 com\manoj\dao\PersonDao.class

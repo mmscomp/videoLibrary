@@ -43,12 +43,15 @@ public class ActionController {
     }*/
 	@RequestMapping(value="/movie/Action/add",method=RequestMethod.GET)
 	public String add(Model model){
+		
+		System.out.println(4 + "inside action add");
 		model.addAttribute("genre","Action");
 		return "add";
 	}
 	@RequestMapping(value="/movie/Action/add",method=RequestMethod.POST)
 	public String addActoin(@ModelAttribute("action") Action m){
-		
+		System.out.println(4 + "inside action add post");
+	
 		this.actionService.addActionMovie(m);
 		return "redirect:/movie/Action";
 	}

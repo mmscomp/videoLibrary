@@ -117,7 +117,7 @@ public class LoginController {
         return "redirect:/login";
     }
  
-    @RequestMapping("/login/edit/{id}")
+    @RequestMapping("/VideoLibrary/login/edit/{id}")
     public String editLogin(@PathVariable("id") int id, Model model){
   //      model.addAttribute("login", this.loginService.displayPerson(id));
         model.addAttribute("loginListperson", this.loginService.loginListPerson());

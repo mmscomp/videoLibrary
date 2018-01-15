@@ -1,4 +1,4 @@
-package com.manoj.dao;
+ package com.manoj.dao;
 import com.manoj.model.*;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
