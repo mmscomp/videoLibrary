@@ -78,8 +78,8 @@
 	    -->
 	    </div>  
 	    <div id="view">
-	    <a href=/log/${romantic}/${romantic.title}/${romantic.id} >Write a review</a>
-	 &emsp;&emsp;&emsp;   <a href=/movie/${romantic}/${romantic.title}/${romantic.id}/views >View reviews</a>
+	    <a href="/log/Romantic/${romantic.title}/${romantic.id}">Write a review</a>
+	 &emsp;&emsp;&emsp;   <a href="/movie/Romantic/${romantic.title}/${romantic.id}/views">View reviews</a>
 	</div>
 	</div>
 	                    

@@ -22,7 +22,6 @@ public class MovieController {
 	private MovieService movieService;
 	
 	@Autowired(required=true)
-//	@Resource
 	@Qualifier(value="movieService")
 	public void setMovieService(MovieService ms){
 		this.movieService = ms;

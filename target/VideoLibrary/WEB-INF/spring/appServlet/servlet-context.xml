@@ -52,7 +52,8 @@
 				<beans:value>com.manoj.model.Romantic</beans:value>
 			<beans:value>com.manoj.model.Horror</beans:value>
 			<beans:value>com.manoj.model.LiveTV</beans:value>
-			
+            <beans:value>com.manoj.model.Physics</beans:value>
+            <beans:value>com.manoj.model.ComputerScience</beans:value>
 			</beans:list>
 		</beans:property>
 		<beans:property name="hibernateProperties">
@@ -139,6 +140,30 @@
 			ref="hibernate4AnnotatedSessionFactory" />
 	</beans:bean>
 
+	<beans:bean id="educationService" class="com.manoj.service.EducationService">
+		<beans:property name="educationDao" ref="educationDao"></beans:property>
+	</beans:bean>
+	<beans:bean id="educationDao" class="com.manoj.dao.EducationDao">
+		<beans:property name="sessionFactory"
+			ref="hibernate4AnnotatedSessionFactory" />
+	</beans:bean>
+
+	<beans:bean id="phyService" class="com.manoj.service.PhysicsService">
+		<beans:property name="physicsDao" ref="physicsDao"></beans:property>
+	</beans:bean>
+	<beans:bean id="physicsDao" class="com.manoj.dao.PhysicsDao">
+		<beans:property name="sessionFactory"
+			ref="hibernate4AnnotatedSessionFactory" />
+	</beans:bean>
+	
+		<beans:bean id="compService" class="com.manoj.service.ComputerScienceService">
+		<beans:property name="computerScienceDao" ref="computerScienceDao"></beans:property>
+	</beans:bean>
+	<beans:bean id="computerScienceDao" class="com.manoj.dao.ComputerScienceDao">
+		<beans:property name="sessionFactory"
+			ref="hibernate4AnnotatedSessionFactory" />
+	</beans:bean>
+	
 
 	<context:component-scan base-package="com.manoj" >
 	             <context:include-filter type="aspectj" expression="com.manoj.*" />

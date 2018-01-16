@@ -39,13 +39,6 @@ public class MovieService  {
 		return this.movieDao.movieList();
 	}
 
-	//@Override
-/*	@Transactional
-	public Login displayLogin(int id) {
-		return this.personDao.displayPerson(id);
-	}*/
-
-	//@Override
 	@Transactional
 	public void removeMovie(int id) {
 		this.movieDao.removeMovie(id);

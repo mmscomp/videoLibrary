@@ -1,6 +1,4 @@
 package com.manoj.controller;
-//import  com.manoj.LoginController;
-//import com.manoj.model.Person;
 import com.manoj.model.Action;
 import com.manoj.model.Review;
 import com.manoj.service.ActionService;
@@ -37,10 +35,6 @@ public class ActionController {
 		System.out.println("1");
 		return "action";
 	}
-  /*  @RequestMapping(value="/movie/${name}", method=RequestMethod.GET)
-    public String logg(Model model){
-    	return "wReview";
-    }*/
 	@RequestMapping(value="/movie/Action/add",method=RequestMethod.GET)
 	public String add(Model model){
 		

@@ -8,7 +8,8 @@
 <title>Yahoo!!</title>
 <link href="webjars/bootstrap/3.3.6/css/bootstrap.min.css"
 	rel="stylesheet">
-
+<link href="<c:url value="/resources/css/style.css" />" rel="stylesheet"> 
+<!--  
 <style>
 .container {
     padding-right: 15px;
@@ -21,7 +22,7 @@
     text-align: left;
 }
 .diary-primary{
-    background-color: #77ff00;<!--#594a42;-->
+    background-color: #77ff00;
     color: red;
     padding-top: 25px;
     padding-bottom: 160px;
@@ -94,7 +95,7 @@ input > #11 {
     background-color: #52EF49;
 }
 </style>
-
+-->
 </head>
 <body>
 	<!--  <h1>My First JSP!!!</h1>-->
@@ -102,14 +103,6 @@ input > #11 {
 
 	<nav class="navbar navbar-default">
 
-<!--  		<a href="/" class="navbar-brand">Brand</a>
-
-		<ul class="nav navbar-nav">
-			<li class="active"><a href="#">Home</a></li>
-			<li><a href="/todo.do">Todos</a></li>
-			<li><a href="http://www.yahoo.com">Yahoo</a></li>
-		</ul>
--->
 		<ul class="nav navbar-nav navbar-right">
 			<li><a href="#">Login</a></li>
 		</ul>
@@ -120,12 +113,6 @@ input > #11 {
 		<p>
 			<font color=red>${errorMessage }</font>
 		</p>
-		<!--<form action="#" method=POST>
-			User name: <input name=name type=text /> Password:<input
-				name=password type=password><input type=submit value="Login" />
-				<a href="#">Reset your user name and password</a>		
-			    <h1 class="signUp"><a href="#">Sign Up</a></h1>
--->
 
    <a href="/movie/${genre}/">Go Back</a>
    <form action = "/movie/${genre}/add/" method="post">
