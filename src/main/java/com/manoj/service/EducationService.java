@@ -22,8 +22,8 @@ public class EducationService  {
 
 //	@Override
 	@Transactional
-	public void addLogin(Education e) {
-		this.educationDao.addLogin(e);
+	public void addEducation(Education e) {
+		this.educationDao.addEdu(e);
 	}
 
 	//@Override

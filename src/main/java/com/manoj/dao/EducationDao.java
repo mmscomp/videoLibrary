@@ -26,7 +26,7 @@ public class EducationDao {
 	}
 
 //	@Override
-	public void addLogin(Education e) {
+	public void addEdu(Education e) {
 		Session session = this.sessionFactory.getCurrentSession();
 		System.out.println("8. "+e.getField());
 		session.persist(e);

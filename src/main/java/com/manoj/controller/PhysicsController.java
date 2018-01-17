@@ -41,10 +41,10 @@ public class PhysicsController {
 		
 		System.out.println(4 + "inside physics add");
 		model.addAttribute("field","Physics");
-		return "add";
+		return "addEdu";
 	}
 	@RequestMapping(value="/edu/Physics/add",method=RequestMethod.POST)
-	public String addPhy(@ModelAttribute("phy") Physics m){
+	public String addPhy(@ModelAttribute("physics") Physics m){
 		System.out.println(4 + "inside physics add post");
 	
 		this.phyService.addPhyEdu(m);

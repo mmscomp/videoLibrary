@@ -2,12 +2,18 @@ package com.manoj.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
+import javax.annotation.Resource;
+import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-import com.manoj.service.EducationService;
+import com.manoj.model.Education;
+import com.manoj.service.*;
 
+@Controller
 public class EducationController {
 	
 	private EducationService educationService;
@@ -27,8 +33,15 @@ public class EducationController {
 	}
 	@RequestMapping(value="/movie/Education/add", method=RequestMethod.GET)
 	public String add(Model model){
- 		model.addAttribute("field","");
-		return "add";		
+ 		model.addAttribute("field","field");
+		return "addEduCat";		
+	}
+	@RequestMapping(value="/movie/Education/add",method=RequestMethod.POST)
+	public String addPhy(@ModelAttribute("edu") Education m){
+		System.out.println(4 + "inside physics add post");
+	
+		this.educationService.addEducation(m);
+		return "redirect:/movie/Education";
 	}
 
 }

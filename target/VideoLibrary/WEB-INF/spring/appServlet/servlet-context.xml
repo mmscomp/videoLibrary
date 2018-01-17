@@ -52,6 +52,7 @@
 				<beans:value>com.manoj.model.Romantic</beans:value>
 			<beans:value>com.manoj.model.Horror</beans:value>
 			<beans:value>com.manoj.model.LiveTV</beans:value>
+			<beans:value>com.manoj.model.Education</beans:value>
             <beans:value>com.manoj.model.Physics</beans:value>
             <beans:value>com.manoj.model.ComputerScience</beans:value>
 			</beans:list>

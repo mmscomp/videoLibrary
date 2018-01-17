@@ -41,10 +41,10 @@ public class ComputerScienceController {
 		
 		System.out.println(4 + "inside CS add");
 		model.addAttribute("field","ComputerScience");
-		return "add";
+		return "addEdu";
 	}
 	@RequestMapping(value="/edu/ComuterScience/add",method=RequestMethod.POST)
-	public String addComp(@ModelAttribute("comp") ComputerScience m){
+	public String addComp(@ModelAttribute("computerScience") ComputerScience m){
 		System.out.println(4 + "inside CS add post");
 	
 		this.compService.addCompEdu(m);

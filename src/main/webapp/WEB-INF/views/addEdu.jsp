@@ -114,8 +114,8 @@ input > #11 {
 			<font color=red>${errorMessage }</font>
 		</p>
 
-   <a href="/movie/${genre}/">Go Back</a>
-   <form action = "/edu/${genre}/add/" method="post">
+   <a href="/edu/${field}/">Go Back</a>
+   <form action = "/edu/${field}/add/" method="post">
    Title:<input class="one" type=text name=title >
    Description:  <input class="two" type=text name=casting>
    Link: <input class="three" type=text name=links>
