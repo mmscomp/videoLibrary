@@ -5,7 +5,7 @@
 
 <html>
 <head>
-<title>Yahoo!!</title>
+<title>Education</title>
 <link href="<c:url value="/resources/css/style.css" />" rel="stylesheet"> 
 <link href="webjars/bootstrap/3.3.6/css/bootstrap.min.css"
 	rel="stylesheet">

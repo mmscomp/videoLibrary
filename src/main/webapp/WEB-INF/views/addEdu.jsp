@@ -117,8 +117,8 @@ input > #11 {
    <a href="/edu/${field}/">Go Back</a>
    <form action = "/edu/${field}/add/" method="post">
    Title:<input class="one" type=text name=title >
-   Description:  <input class="two" type=text name=casting>
-   Link: <input class="three" type=text name=links>
+   Description:  <input class="two" type=text name=description>
+   Link: <input class="three" type=text name=link>
    <input id="11" type=submit value=add />
    </form> 
   </section>
