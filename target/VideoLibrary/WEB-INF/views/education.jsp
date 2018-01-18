@@ -21,7 +21,7 @@
 
 	<section class= "movie movie-primary bg-image">
 	<div class="container">
-	<div class="title"><h1><span> EDUCATTION </span></h1> </div>
+	<div class="title"><h1><span> EDUCATION </span></h1> </div>
 	<div class="sub-title"> <h2>Select a category</h2></div>
 	<c:forEach items="${edu}" var="education">
 	    <a href="/edu/${education.field}" target="_top"><h3>${education.field}</h3></a>
