@@ -54,7 +54,7 @@ public class PhysicsController {
 	public String remove(Model model, @PathVariable("id") int id){
 		model.addAttribute("field","Physics");
 		model.addAttribute("id", id);
-		return "remove";
+		return "removeEdu";
 	}
 	@RequestMapping(value="/edu/Physics/{id}/delete",method=RequestMethod.POST)
 	public String removePhysics(Model model, @PathVariable("id") int id){

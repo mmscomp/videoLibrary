@@ -54,7 +54,7 @@ public class ComputerScienceController {
 	public String remove(Model model, @PathVariable("id") int id){
 		model.addAttribute("field","ComputerScience");
 		model.addAttribute("id", id);
-		return "remove";
+		return "removeEdu";
 	}
 	@RequestMapping(value="/edu/ComputerScience/{id}/delete",method=RequestMethod.POST)
 	public String removeComp(Model model, @PathVariable("id") int id){
