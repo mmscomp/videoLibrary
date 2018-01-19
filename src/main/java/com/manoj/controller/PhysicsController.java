@@ -57,9 +57,16 @@ public class PhysicsController {
 		return "removeEdu";
 	}
 	@RequestMapping(value="/edu/Physics/{id}/delete",method=RequestMethod.POST)
-	public String removePhysics(Model model, @PathVariable("id") int id){
-		
-		this.phyService.removePhyEdu(id);
+	public String removePhysics(Model model, @PathVariable("id") int id, @ModelAttribute("user") String user, @ModelAttribute("pass") String password){
+		List<String> sl = this.phyService.phyEdu(id);
+		for(int i=0; i<sl.size(); i++){
+			if (sl.get(i).equals(user)&&sl.get(i+1).equals(password)){
+				this.phyService.removePhyEdu(id);
+			}else{
+				return "removeEdu";
+			}
+		}
+//		this.phyService.removePhyEdu(id);
 		return "redirect:/edu/Physics";
 	}
 

@@ -32,7 +32,11 @@ public class PhysicsService  {
 	public void updateLogin(Physics m) {
 		this.physicsDao.updateLogin(m);
 	}
-
+    
+	@Transactional
+	public List<String> phyEdu(int id){
+		return this.physicsDao.phyEdu(id);
+	}
 	//@Override
 	@Transactional
 	public List<Physics> listPhyEdu() {

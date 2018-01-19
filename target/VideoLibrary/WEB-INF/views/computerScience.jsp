@@ -42,7 +42,7 @@
 	    <a href="${comp.link}">${comp.title}</a>
 	    </div>
 	    <div class="2">
-	    <a href="/edu/ComputerScience/${comp.title} }/${comp.id}/delete">Remove</a>
+	    <a href="/edu/ComputerScience/${comp.id}/delete">Remove</a>
 	    </div>
 	    </div> 
 	       <br>

@@ -19,7 +19,13 @@ public class Physics {
 	
 	@Column(name="link")
 	private String link;
-
+    
+	@Column(name="username")
+	private String username;
+	
+	@Column(name="passwd")
+	private String passwd;
+	
 	public Physics(){}
 	public Physics(String title) {
 		this.title = title;
@@ -30,6 +36,18 @@ public class Physics {
 	}
 
 
+	public String getUsername() {
+		return username;
+	}
+	public void setUsername(String username) {
+		this.username = username;
+	}
+	public String getPasswd() {
+		return passwd;
+	}
+	public void setPasswd(String passwd) {
+		this.passwd = passwd;
+	}
 	public String getTitle() {
 		return title;
 	}

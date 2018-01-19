@@ -78,7 +78,10 @@ h1.signUp:hover {
 			<font color=red>${errorMessage }</font>
 		</p>
 		<form action="/edu/${field}/${id}/delete" method=POST>
-			Do you really want to delete? <input type=submit value="remove"/>
+			Do you really want to delete? 
+		<br> User Name: <input type=text name=user>
+		     Pass Word: <input type=password name=pass>	
+			<input type=submit value="remove"/>
 		</form>
 	        <a href=/edu/${field}/ >Cancel</a>
   </section>
