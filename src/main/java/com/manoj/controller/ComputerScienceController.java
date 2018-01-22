@@ -57,10 +57,20 @@ public class ComputerScienceController {
 		return "removeEdu";
 	}
 	@RequestMapping(value="/edu/ComputerScience/{id}/delete",method=RequestMethod.POST)
-	public String removeComp(Model model, @PathVariable("id") int id){
-		
-		this.compService.removeCompEdu(id);
-		return "redirect:/edu/ComputerScience";
+	public String removeComp(Model model, @PathVariable("id") int id, HttpServletRequest req){
+		String user = req.getParameter("user");
+		String password = req.getParameter("pass");
+		List<ComputerScience> cs = this.compService.listCompEdu();
+		for(ComputerScience x: cs){
+		   if(x.getUsername().equals(user)&& x.getPasswd().equals(password)){
+			this.compService.removeCompEdu(id);
+			return "redirect:/edu/ComputerScience";
+			
+		   }
+		}
+		req.setAttribute("errorMessage","Incorrect user name or password. Try again!");
+        model.addAttribute("field", "ComputerScience");
+		return "removeEdu";
 	}
 
 	
