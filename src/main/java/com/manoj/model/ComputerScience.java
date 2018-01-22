@@ -20,6 +20,12 @@ public class ComputerScience {
 	@Column(name="link")
 	private String link;
 
+	@Column(name="username")
+	private String username;
+	
+	@Column(name="passwd")
+	private String passwd;
+	
     public ComputerScience(){}
 	public ComputerScience(String title) {
 		this.title = title;
@@ -32,6 +38,18 @@ public class ComputerScience {
 	}
 
 
+	public String getUsername() {
+		return username;
+	}
+	public void setUsername(String username) {
+		this.username = username;
+	}
+	public String getPasswd() {
+		return passwd;
+	}
+	public void setPasswd(String passwd) {
+		this.passwd = passwd;
+	}
 	public String getTitle() {
 		return title;
 	}
