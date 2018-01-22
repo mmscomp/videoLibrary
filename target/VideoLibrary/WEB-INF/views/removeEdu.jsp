@@ -76,6 +76,7 @@ h1.signUp:hover {
 	<!--  <div class="container">-->
 		<p>${id}
 			<font color=red>${errorMessage }</font>
+			<br>&emsp; ${a},&emsp;${b}
 		</p>
 		<form action="/edu/${field}/${id}/delete" method=POST>
 			Do you really want to delete? 

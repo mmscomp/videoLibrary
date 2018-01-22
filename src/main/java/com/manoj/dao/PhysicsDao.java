@@ -42,11 +42,11 @@ public class PhysicsDao {
 
 	@SuppressWarnings("unchecked")
 //	@Override
-	public List<String> phyEdu(int id) {
+	public List<Physics> phyEdu(int id) {
 		System.out.println("2. ");
 		Session session = this.sessionFactory.getCurrentSession();
 		System.out.println("3. ");
-		List<String> phyList1 = session.createQuery("from Physics where id=id").list();
+		List<Physics> phyList1 = session.createQuery("from Physics where id=id").list();
 		System.out.println(phyList1);
 	/*	for(String m : phyList1){
 			logger.info("Phy cate List::"+m);

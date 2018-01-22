@@ -34,7 +34,7 @@ public class PhysicsService  {
 	}
     
 	@Transactional
-	public List<String> phyEdu(int id){
+	public List<Physics> phyEdu(int id){
 		return this.physicsDao.phyEdu(id);
 	}
 	//@Override

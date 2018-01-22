@@ -57,17 +57,23 @@ public class PhysicsController {
 		return "removeEdu";
 	}
 	@RequestMapping(value="/edu/Physics/{id}/delete",method=RequestMethod.POST)
-	public String removePhysics(Model model, @PathVariable("id") int id, @ModelAttribute("user") String user, @ModelAttribute("pass") String password){
-		List<String> sl = this.phyService.phyEdu(id);
-		for(int i=0; i<sl.size(); i++){
-			if (sl.get(i).equals(user)&&sl.get(i+1).equals(password)){
+	public String removePhysics(Model model, HttpServletRequest req, HttpServletResponse res, @PathVariable("id") int id){//, @ModelAttribute("user") String user, @ModelAttribute("pass") String password){
+		List<Physics> sl = this.phyService.phyEdu(id);
+		System.out.println("Phy " + sl.size());
+		String user = req.getParameter("user");
+		String password = req.getParameter("pass");
+		for(Physics p:sl){
+			if (p.getUsername().equals(user)&&p.getPasswd().equals(password)&& p.getId()==id){
 				this.phyService.removePhyEdu(id);
-			}else{
-				return "removeEdu";
+				return "redirect:/edu/Physics";
 			}
 		}
-//		this.phyService.removePhyEdu(id);
-		return "redirect:/edu/Physics";
+		
+		req.setAttribute("errorMessage","Incorrect user name or password. Try again!");
+		req.setAttribute("a", sl);
+		req.setAttribute("b", password);
+		model.addAttribute("field", "Physics");
+		return "removeEdu"; //redirect:/edu/Physics/{id}/delete";
 	}
 
 	
