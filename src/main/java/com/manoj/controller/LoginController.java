@@ -71,6 +71,9 @@ public class LoginController {
 				//String s = "redirect:/"+"movie/review/"+us+"/"+k;
 				model.addAttribute("username",us);
 	//			System.out.println("6. "+s);
+				if(gen.equals("Physics")||gen.equals("ComputerScience"))
+					return "reviewEdu";
+				else
 				return "review";//"redirect:/diary/{k}";
 			}
 		}
@@ -79,7 +82,7 @@ public class LoginController {
 		return "login";
 	}
 	
-	@RequestMapping(value = "/log/{field}/{title}/{id}/verify", method = RequestMethod.POST)
+/*	@RequestMapping(value = "/log/edu/{field}/{title}/{id}/verify", method = RequestMethod.POST)
 	public String loginEduVerify(@PathVariable("id") int mId,@PathVariable("title") String title, @PathVariable("field") String field,Model model,HttpServletRequest req, HttpServletResponse res){//("firstName")String name
 			//(,@ModelAttribute("lastName") String passwd) {
 		model.addAttribute("mId", mId);
@@ -104,7 +107,7 @@ public class LoginController {
 		req.setAttribute("errorMessage","Incorrect credentials. Try again!");
 		return "login";
 	}
-		
+	*/	
 	//Fo r add and update person both
 	@RequestMapping(value= "/log/register", method = RequestMethod.POST)
 	public String addLogin(@ModelAttribute("login") Login p, HttpServletRequest req){

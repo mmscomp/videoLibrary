@@ -84,7 +84,7 @@ public class PhysicsDao {
 	public void removePhyEdu(int id) {
 		Session session = this.sessionFactory.getCurrentSession();
 		Physics l = (Physics) session.load(Physics.class, new Integer(id));
-		if(null != l){
+		if(null != l){ 
 			session.delete(l);
 		}
 		logger.info("Physics edu category deleted successfully, movie details="+l);

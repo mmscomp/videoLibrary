@@ -49,8 +49,8 @@
 	    <iframe src="${phy.link}"></iframe>
 	    </div> 
 	    <div id="view">
-	    <a href="/log/${phy}/${phy.title}/${phy.id}">Write a review</a>
-	 &emsp;&emsp;&emsp;   <a href="/edu/${phy}/${phy.title}/${phy.id}/views">View reviews</a>
+	    <a href="/log/Physics/${phy.title}/${phy.id}">Write a review</a>
+	 &emsp;&emsp;&emsp;   <a href="/edu/Physics/${phy.title}/${phy.id}/views">View reviews</a>
 	</div>
 	</div>
 	                    
