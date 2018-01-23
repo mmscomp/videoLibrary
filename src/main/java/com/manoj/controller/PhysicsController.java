@@ -96,7 +96,7 @@ public class PhysicsController {
     	System.out.println("I'm inside phy controller/views");
     	model.addAttribute("mId",id);
     	model.addAttribute("title", title);
-    	model.addAttribute("reviewList",this.phyService.listReview("phy",title,id));
+    	model.addAttribute("reviewList",this.phyService.listReview("physics",title,id));
     	return "views";
     }
   /*  @RequestMapping(value="/edu/Physics/login", method=RequestMethod.GET)
