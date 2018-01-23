@@ -79,6 +79,31 @@ public class LoginController {
 		return "login";
 	}
 	
+	@RequestMapping(value = "/log/{field}/{title}/{id}/verify", method = RequestMethod.POST)
+	public String loginEduVerify(@PathVariable("id") int mId,@PathVariable("title") String title, @PathVariable("field") String field,Model model,HttpServletRequest req, HttpServletResponse res){//("firstName")String name
+			//(,@ModelAttribute("lastName") String passwd) {
+		model.addAttribute("mId", mId);
+		model.addAttribute("field",field);
+		model.addAttribute("title", title);
+		String name = req.getParameter("name");
+		String pw = req.getParameter("password");
+		model.addAttribute("listPerson", this.loginService.loginListPerson());
+		System.out.println("4. "+name+" "+pw);
+		for(Login x: this.loginService.loginListPerson()){
+			System.out.println("5. "+x.getId()+" "+x.getUserName()+" "+x.getPasswd());
+			if(name.equals(x.getUserName())&& pw.equals(x.getPasswd())){
+				int k = x.getId();
+				String us = x.getUserName();
+				//String s = "redirect:/"+"movie/review/"+us+"/"+k;
+				model.addAttribute("username",us);
+	//			System.out.println("6. "+s);
+				return "reviewEdu";//"redirect:/diary/{k}";
+			}
+		}
+		//System.out.println(listPerson());
+		req.setAttribute("errorMessage","Incorrect credentials. Try again!");
+		return "login";
+	}
 		
 	//Fo r add and update person both
 	@RequestMapping(value= "/log/register", method = RequestMethod.POST)
