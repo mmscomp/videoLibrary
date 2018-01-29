@@ -26,7 +26,14 @@ public class MovieController {
 	public void setMovieService(MovieService ms){
 		this.movieService = ms;
 	}
-	@RequestMapping(value={"/","/movie"}, method=RequestMethod.GET)
+	
+	@RequestMapping(value={"/"}, method=RequestMethod.GET)
+	public String main(Model model){
+		System.out.println("0");
+		return "main";
+	}
+	
+	@RequestMapping(value={"/movie"}, method=RequestMethod.GET)
 	public String log(Model model){
 		System.out.println("Im inside  Controller");
 		
