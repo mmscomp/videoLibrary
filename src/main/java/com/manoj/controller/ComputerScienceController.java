@@ -76,7 +76,7 @@ public class ComputerScienceController {
 	
 	@RequestMapping(value="/edu/ComputerScience/{title}/{id}/{uName}",method=RequestMethod.POST)
 	public String review(@ModelAttribute("name") String s, @ModelAttribute("loc") String location, @PathVariable("title") String title, @PathVariable("uName")String user,@PathVariable("id")int id){
-		Review r = new Review();
+		Review r = new Review(); 
 		System.out.println("000. "+r.getId() + s);
 		r.setReview(s);
 		r.setGenre("physics");
