@@ -28,9 +28,15 @@ public class LoginController {
 	public void setLoginService(LoginService ls){
 		this.loginService = ls;
 	}
-	@RequestMapping(value = {"/log/{genre}/{title}/{id}"}, method = RequestMethod.GET)
-//	@Repeatable(value = "/", method = RequestMethod.GET)	
+	
+	@RequestMapping(value = {"/","/log"}, method = RequestMethod.GET)
 
+	public String log(Model model) {
+		return "loginDiary";
+	}
+
+	
+	@RequestMapping(value = {"/log/{genre}/{title}/{id}"}, method = RequestMethod.GET)
 	public String log(@PathVariable String genre,@PathVariable String title, @PathVariable("id") int id, Model model) {
 		
 		System.out.println("35" + genre);
@@ -52,7 +58,26 @@ public class LoginController {
     public String reset(Model model){
     	return "reset";
     }
-	
+
+	@RequestMapping(value = "/log/verify", method = RequestMethod.POST)
+	public String loginVerifyforDiary(Model model,HttpServletRequest req, HttpServletResponse res){//("firstName")String name
+		String name = req.getParameter("name");
+		String pw = req.getParameter("password");
+		model.addAttribute("listPerson", this.loginService.loginListPerson());
+		System.out.println("4. "+name+" "+pw);
+		for(Login x: this.loginService.loginListPerson()){
+			System.out.println("5. "+x.getId()+" "+x.getUserName()+" "+x.getPasswd());
+			if(name.equals(x.getUserName())&& pw.equals(x.getPasswd())){
+				int k = x.getId();
+				String s = "redirect:/"+"diary/"+k;
+				System.out.println("6. "+s);
+				return s;//"redirect:/diary/{k}";
+			}
+		}
+		req.setAttribute("errorMessage","Incorrect credentials. Try again!");
+		return "loginDiary";
+	}
+
 	@RequestMapping(value = "/log/{genre}/{title}/{id}/verify", method = RequestMethod.POST)
 	public String loginVerify(@PathVariable("id") int mId,@PathVariable("title") String title, @PathVariable("genre") String gen,Model model,HttpServletRequest req, HttpServletResponse res){//("firstName")String name
 			//(,@ModelAttribute("lastName") String passwd) {
@@ -73,7 +98,9 @@ public class LoginController {
 	//			System.out.println("6. "+s);
 				if(gen.equals("Physics")||gen.equals("ComputerScience"))
 					return "reviewEdu";
-				else
+				else if(gen.equals("diary")){
+					return "diary";
+				}
 				return "review";//"redirect:/diary/{k}";
 			}
 		}
