@@ -19,29 +19,35 @@ public class DiaryService {
 	   public void setDiaryDao(DiaryDao diaryDao){
 		   this.diaryDao = diaryDao;
 	   }
-	   
+	
+	@Transactional
 	public void addDiary(Diary d){
 		this.diaryDao.addDiary(d);
 		
 	}
 	
+	@Transactional
 	public void updateDiary(Diary d){
 		this.diaryDao.updateDiary(d);
 	}
 	
+	@Transactional
 	public Diary displayDiary(int id){
 		return this.diaryDao.displayDiary(id);
 	}
 	
+	@Transactional
 	public void removeDiary(int id){
 		this.diaryDao.removeDiary(id);
 	}
 	
-	List<Diary> listDiary(){
+	@Transactional
+	public List<Diary> listDiary(){
 		return this.diaryDao.listDiary();
 	}
-
-	List<Diary> listDiary1(int id){
+	
+	@Transactional
+	public List<Diary> listDiary1(int id){
 		
 		return this.diaryDao.listDiary1(id);
 	}

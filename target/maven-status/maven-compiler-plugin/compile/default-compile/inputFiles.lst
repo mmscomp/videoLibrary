@@ -11,6 +11,7 @@ C:\Users\ARIGAP\Desktop\Manoj\videoLibrary\src\main\java\com\manoj\model\Review.
 C:\Users\ARIGAP\Desktop\Manoj\videoLibrary\src\main\java\com\manoj\model\ComputerScience.java
 C:\Users\ARIGAP\Desktop\Manoj\videoLibrary\src\main\java\com\manoj\model\Physics.java
 C:\Users\ARIGAP\Desktop\Manoj\videoLibrary\src\main\java\com\manoj\controller\LiveTVController.java
+C:\Users\ARIGAP\Desktop\Manoj\videoLibrary\src\main\java\com\manoj\model\Diary.java
 C:\Users\ARIGAP\Desktop\Manoj\videoLibrary\src\main\java\com\manoj\dao\RomanticDao.java
 C:\Users\ARIGAP\Desktop\Manoj\videoLibrary\src\main\java\com\manoj\dao\DramaDao.java
 C:\Users\ARIGAP\Desktop\Manoj\videoLibrary\src\main\java\com\manoj\service\LiveTVService.java
@@ -34,7 +35,9 @@ C:\Users\ARIGAP\Desktop\Manoj\videoLibrary\src\main\java\com\manoj\service\Movie
 C:\Users\ARIGAP\Desktop\Manoj\videoLibrary\src\main\java\com\manoj\controller\EducationController.java
 C:\Users\ARIGAP\Desktop\Manoj\videoLibrary\src\main\java\com\manoj\service\ComedyService.java
 C:\Users\ARIGAP\Desktop\Manoj\videoLibrary\src\main\java\com\manoj\model\Drama.java
+C:\Users\ARIGAP\Desktop\Manoj\videoLibrary\src\main\java\com\manoj\dao\DiaryDao.java
 C:\Users\ARIGAP\Desktop\Manoj\videoLibrary\src\main\java\com\manoj\service\DramaService.java
+C:\Users\ARIGAP\Desktop\Manoj\videoLibrary\src\main\java\com\manoj\controller\DiaryController.java
 C:\Users\ARIGAP\Desktop\Manoj\videoLibrary\src\main\java\com\manoj\controller\ComedyController.java
 C:\Users\ARIGAP\Desktop\Manoj\videoLibrary\src\main\java\com\manoj\dao\MovieDao.java
 C:\Users\ARIGAP\Desktop\Manoj\videoLibrary\src\main\java\com\manoj\dao\ComputerScienceDao.java
@@ -46,4 +49,5 @@ C:\Users\ARIGAP\Desktop\Manoj\videoLibrary\src\main\java\com\manoj\service\Horro
 C:\Users\ARIGAP\Desktop\Manoj\videoLibrary\src\main\java\com\manoj\dao\LiveTVDao.java
 C:\Users\ARIGAP\Desktop\Manoj\videoLibrary\src\main\java\com\manoj\service\ActionService.java
 C:\Users\ARIGAP\Desktop\Manoj\videoLibrary\src\main\java\com\manoj\service\RomanticService.java
+C:\Users\ARIGAP\Desktop\Manoj\videoLibrary\src\main\java\com\manoj\service\DiaryService.java
 C:\Users\ARIGAP\Desktop\Manoj\videoLibrary\src\main\java\com\manoj\model\Movie.java

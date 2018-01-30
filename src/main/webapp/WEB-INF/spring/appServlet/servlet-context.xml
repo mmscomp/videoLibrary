@@ -44,6 +44,7 @@
 			<beans:list>
 				<beans:value>com.manoj.model.Person</beans:value>			
 				<beans:value>com.manoj.model.Login</beans:value>
+				<beans:value>com.manoj.model.Diary</beans:value>
 				<beans:value>com.manoj.model.Review</beans:value>
 				<beans:value>com.manoj.model.Movie</beans:value>
 				<beans:value>com.manoj.model.Action</beans:value>
@@ -79,8 +80,17 @@
 	</beans:bean>
 
 	<beans:bean id="loginService" class="com.manoj.service.LoginService">
-		<beans:property name="loginDao" ref="loginDao"></beans:property>
+		<beans:property name="LoginDao" ref="loginDao"></beans:property>
 	</beans:bean>
+	<beans:bean id="diaryDao" class="com.manoj.dao.DiaryDao">
+		<beans:property name="sessionFactory"
+			ref="hibernate4AnnotatedSessionFactory" />
+	</beans:bean>
+
+	<beans:bean id="diaryService" class="com.manoj.service.DiaryService">
+		<beans:property name="DiaryDao" ref="diaryDao"></beans:property>
+	</beans:bean>
+
 
 	<beans:bean id="movieDao" class="com.manoj.dao.MovieDao">
 		<beans:property name="sessionFactory"
