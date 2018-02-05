@@ -142,7 +142,7 @@ h3#mg>a:hover {
 		</table>
 		</div>
 		</div>
-					<a href="/log">Login Page</a>
+					<a href="/logout">Logout</a>
 		
 	</form:form>
 	<br>
