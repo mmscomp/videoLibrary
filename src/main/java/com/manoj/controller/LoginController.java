@@ -29,7 +29,7 @@ public class LoginController {
 		this.loginService = ls;
 	}
 	
-	@RequestMapping(value = {"/","/log"}, method = RequestMethod.GET)
+	@RequestMapping(value = {"/log"}, method = RequestMethod.GET)
 
 	public String log(Model model) {
 		return "loginDiary";

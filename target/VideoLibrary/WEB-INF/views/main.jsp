@@ -59,7 +59,7 @@
 	<ul>
 	  <li> <a href="/movie"><h3>Movies</h3></a></li>
       <li> <a href="/edu"><h3>Education</h3></a></li>
-      <li> <a href="/diary"><h3>Diary</h3></a>
+      <li> <a href="/log"><h3>Diary</h3></a>
 	</ul> 
 	   
 	</div>

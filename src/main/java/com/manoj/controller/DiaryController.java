@@ -1,5 +1,8 @@
  package com.manoj.controller;
 
+ import javax.servlet.http.HttpServletResponse;
+ import javax.servlet.http.HttpServletRequest;
+ import javax.servlet.http.HttpSession;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import javax.annotation.Resource;
@@ -34,16 +37,20 @@ public class DiaryController {
 	}
 */
 	@RequestMapping(value= "/diary/{person_id}", method = RequestMethod.GET)	
-	public String listDiary1(@PathVariable int person_id, Model model) {
+	public String listDiary1(@PathVariable int person_id, Model model, HttpSession session) {
 		Diary d = new Diary();
 		d.setPerson_id(person_id);
 		model.addAttribute("dia","Add a Diary");
 		model.addAttribute("diary", d);//new Diary());
 		model.addAttribute("person_id",person_id);
 		model.addAttribute("listDiary1", this.diaryService.listDiary1(person_id));
-		return "diary";
+		if (session != null)
+  
+			return "diary";
+		else
+			return "login";
 	}
-
+    
 	//For add and update diary both
 	@RequestMapping(value= "/diary/add/{person_id}", method = RequestMethod.POST)
 	public String addDiary(@PathVariable int person_id,@ModelAttribute("diary") Diary d){
