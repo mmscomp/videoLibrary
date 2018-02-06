@@ -28,14 +28,6 @@ public class DiaryController {
 		this.diaryService = ds;
 	}
 
-/*	@RequestMapping(value= "/diary/{person_id}", method = RequestMethod.GET)		
-	 public String listDiary(@PathVariable("person_id") int person_id,Model model) {
-		model.addAttribute("diary", new Diary());
-		model.addAttribute("person_id",person_id);
-		model.addAttribute("listDiary", this.diaryService.listDiary());
-		return "diary/person_id";
-	}
-*/
 	@RequestMapping(value= "/diary/{person_id}", method = RequestMethod.GET)	
 	public String listDiary1(@PathVariable int person_id, Model model, HttpSession session) {
 		Diary d = new Diary();
