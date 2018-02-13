@@ -1,3 +1,7 @@
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ taglib uri="http://www.springframework.org/tags" prefix="spring"%>
+<%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
+<%@ page session="false"%>
 <html>
 <head>
 <title>Yahoo!!</title>
@@ -12,16 +16,10 @@
 	<nav class="navbar navbar-default">
 
 		<ul class="nav navbar-nav navbar-right">
-			<li><a href="/log">Login</a></li>
+			<li><a href="/">Home</a></li>
 		</ul>
 
 	</nav>
-	<section class= "diary diary-primary bg-image">
-	<div class="container">
-	<div class="title"><h1> Here you are </h1> </div>
-	<div class="sub-title"> <h3>to record your today's experience</h3></div>
-	</div>
-	</section>
 	<section>
 		<p>
 			<font color=red>${errorMessage }</font>
