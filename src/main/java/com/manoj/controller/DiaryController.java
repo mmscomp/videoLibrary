@@ -29,14 +29,17 @@ public class DiaryController {
 	}
 
 	@RequestMapping(value= "/diary/{person_id}", method = RequestMethod.GET)	
-	public String listDiary1(@PathVariable int person_id, Model model, HttpSession session) {
+	public String listDiary1(@PathVariable int person_id, Model model, HttpServletRequest req) {
 		Diary d = new Diary();
 		d.setPerson_id(person_id);
 		model.addAttribute("dia","Add a Diary");
 		model.addAttribute("diary", d);//new Diary());
 		model.addAttribute("person_id",person_id);
 		model.addAttribute("listDiary1", this.diaryService.listDiary1(person_id));
-		if (session != null)
+		HttpSession session = req.getSession(false);
+	  //:s
+	//	System.out.println("123. "+ session.getAttribute("id"));
+		if (session != null && session.getAttribute("id") == (Object)person_id)
   
 			return "diary";
 		else

@@ -1,6 +1,7 @@
 package com.manoj.controller;
 
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import javax.servlet.http.HttpServletRequest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -70,7 +71,10 @@ public class LoginController {
 			if(name.equals(x.getUserName())&& pw.equals(x.getPasswd())){
 				int k = x.getId();
 				String s = "redirect:/"+"diary/"+k;
-				System.out.println("6. "+s);
+				HttpSession session = req.getSession();
+ 				session.setAttribute("id", k);
+
+				System.out.println("61. "+ session.getAttribute("id"));
 				return s;//"redirect:/diary/{k}";
 			}
 		}
