@@ -43,7 +43,7 @@ public class DiaryController {
   
 			return "diary";
 		else
-			return "login";
+			return "loginDiary";
 	}
     
 	//For add and update diary both
