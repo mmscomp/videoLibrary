@@ -63,7 +63,7 @@ h1.signUp:hover {
 	<nav class="navbar navbar-default">
 
 		<ul class="nav navbar-nav navbar-right">
-			<li><a href="/log">Login</a></li>
+			<li><a href="/">Home</a></li>
 		</ul>
 
 	</nav>
@@ -74,7 +74,7 @@ h1.signUp:hover {
 	</section>
 	<section>
 	<!--  <div class="container">-->
-		<p>${id}
+		<p>
 			<font color=red>${errorMessage }</font>
 			<br>&emsp; ${a},&emsp;${b}
 		</p>
