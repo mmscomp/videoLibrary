@@ -73,7 +73,7 @@ h1.signUp:hover {
 		</ul>
 -->
 		<ul class="nav navbar-nav navbar-right">
-			<li><a href="/log">Login</a></li>
+			<li><a href="/">Home</a></li>
 		</ul>
 
 	</nav>

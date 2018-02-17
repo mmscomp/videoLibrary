@@ -18,7 +18,8 @@
 	<!--  <h3>My user name is ${name} and passwd is </h3>-->
 
 	<nav class="navbar navbar-default">
-
+      <a href="/">Home</a>
+      </nav>
 	<section class= "movie movie-primary bg-image">
 	<div class="container">
 	<div class="title"><h1><span> EDUCATION </span></h1> </div>
