@@ -1,9 +1,18 @@
 <html>
 <head>
-<title>Yahoo!!</title>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ taglib uri="http://www.springframework.org/tags" prefix="spring"%>
+<%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
+<%@ page session="false"%>
+<html>
+<head>
+<title>Lypple!</title>
 <link href="webjars/bootstrap/3.3.6/css/bootstrap.min.css"
-	rel="stylesheet">
+        rel="stylesheet">
+<link href="<c:url value="/resources/css/style.css" />" rel="stylesheet">
+<link href="<c:url value="/resources/css/font-awesome.css" />" rel="stylesheet">
 
+<!--
 <style>
 .container {
     padding-right: 15px;
@@ -56,24 +65,14 @@ h1.signUp:hover {
     background-color: #52EF49;
 }
 </style>
-
+-->
 </head>
 <body>
-	<!--  <h1>My First JSP!!!</h1>-->
-	<!--  <h3>My user name is ${name} and passwd is </h3>-->
 
 	<nav class="navbar navbar-default">
 
-<!--  		<a href="/" class="navbar-brand">Brand</a>
-
-		<ul class="nav navbar-nav">
-			<li class="active"><a href="#">Home</a></li>
-			<li><a href="/todo.do">Todos</a></li>
-			<li><a href="http://www.yahoo.com">Yahoo</a></li>
-		</ul>
--->
 		<ul class="nav navbar-nav navbar-right">
-			<li><a href="/log">Login</a></li>
+			<li><a href="/">Home</a></li>
 		</ul>
 
 	</nav>
@@ -98,9 +97,7 @@ h1.signUp:hover {
 	
   </section>
 
-	<footer class="footer">
-		<div>About Us</div>
-	</footer>
+    <%@ include file="footer.jsp" %>  
 
 	<script src="webjars/jquery/1.9.1/jquery.min.js"></script>
 	<script src="webjars/bootstrap/3.3.6/js/bootstrap.min.js"></script>

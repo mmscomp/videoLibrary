@@ -5,6 +5,45 @@
     margin-left: auto;
     max-width: 1150px;
 }
+.diary{
+    text-align: center;
+}
+.diary-primary{
+    background-color: #594a42;
+    color: #fff;
+    padding-top: 25px;
+    padding-bottom: 160px;
+}
+.diary-primary.bg-image > img{
+    opacity: 0.50;
+}
+h1.signUp {
+    margin-top: -20px;
+    float: right;
+}
+
+h1.signUp:hover {
+   background-color: green;
+   cursor: crosshair;
+}
+
+.bg-image{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+.bg-image > img {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+    bottom: -9999px;
+    right: -9999px;
+    margin: auto;
+}
+.footer {
+   position: absolute;
+   bottom: 0;
+}
 .movie{
     text-align: center;
     color: green;
@@ -57,11 +96,11 @@ color: white;
 
 .footer{
     position: absolute;
-    bottom: -100px;
+    bottom: 0;
     width: 90%;
     height: 80px;
     margin-left: 50px;
-    color: white;
+    color: #59749;
     background-color: black;
 }
 .film-container {

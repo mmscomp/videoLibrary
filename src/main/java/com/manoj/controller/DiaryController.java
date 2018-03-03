@@ -45,6 +45,16 @@ public class DiaryController {
 		else
 			return "loginDiary";
 	}
+	
+	@RequestMapping(value= "/diary/logout", method = RequestMethod.GET)	
+	public String logoutDiary( Model model, HttpServletRequest req) {
+
+		HttpSession session = req.getSession(false);
+		session.invalidate();
+	  //:s
+	//	System.out.println("123. "+ session.getAttribute("id"));
+			return "loginDiary";
+	}
     
 	//For add and update diary both
 	@RequestMapping(value= "/diary/add/{person_id}", method = RequestMethod.POST)
