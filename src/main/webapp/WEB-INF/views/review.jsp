@@ -80,8 +80,8 @@ h1.signUp:hover {
 	<section class= "diary diary-primary bg-image">
 	 <!-- <img src="C:\Users\ARIGAP\Desktop\VS\images\thinking-girl.jpg" alt="NOT FOUND">-->
 	<div class="container">
-	<div class="title"><h1> Here you are </h1> </div>
-	<div class="sub-title"> <h3>to record your today's experience</h3></div>
+	<div class="title"><h1> Write a review </h1> </div>
+	<div class="sub-title"> <h3> Your experience</h3></div>
 	</div>
 	</section>
 	<section>

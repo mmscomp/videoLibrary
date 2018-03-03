@@ -91,7 +91,7 @@ public class LoginController {
 		String name = req.getParameter("name");
 		String pw = req.getParameter("password");
 		model.addAttribute("listPerson", this.loginService.loginListPerson());
-		System.out.println("4. "+name+" "+pw);
+		System.out.println("4. "+name+" "+pw + " " + gen);
 		for(Login x: this.loginService.loginListPerson()){
 			System.out.println("5. "+x.getId()+" "+x.getUserName()+" "+x.getPasswd());
 			if(name.equals(x.getUserName())&& pw.equals(x.getPasswd())){

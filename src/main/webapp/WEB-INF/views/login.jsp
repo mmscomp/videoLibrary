@@ -25,7 +25,8 @@
 			<font color=red>${errorMessage }</font>
 		</p>
 		<form action="/log/${genre}/${title}/${mId}/verify" method=POST>
-			User name: <input name=name type=text /> Password:<input
+			User name: <input name=name type=text /> <br/>
+			Password:<input
 				name=password type=password><input type=submit value="Login" />
 				<a href="/log/reset">Reset your user name and password</a>		
 			    <h1 class="signUp"><a href="/log/register">Sign Up</a></h1>
