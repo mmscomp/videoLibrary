@@ -182,5 +182,7 @@ h3#mg>a:hover {
 	  <input type="button" value ="Top" onClick="document.getElementById('mg').scrollIntoView();"/>
 	</h3>
 	</section>
+	    <%@ include file="footer.jsp" %>  
+	
 </body> 
 </html>

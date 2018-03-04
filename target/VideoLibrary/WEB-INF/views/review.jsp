@@ -96,9 +96,7 @@ h1.signUp:hover {
 	        <a href=/log/${genre}/${title}/${mId} >Go Back</a>
   </section>
 
-	<footer class="footer">
-		<div>About Us</div>
-	</footer>
+    <%@ include file="footer.jsp" %>  
 
 	<script src="webjars/jquery/1.9.1/jquery.min.js"></script>
 	<script src="webjars/bootstrap/3.3.6/js/bootstrap.min.js"></script>
