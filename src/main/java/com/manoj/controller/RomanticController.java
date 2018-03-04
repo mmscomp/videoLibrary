@@ -58,7 +58,7 @@ public class RomanticController {
 		model.addAttribute("id", id);
 		return "remove";
 	}
-	@RequestMapping(value="/movie/romantic/{id}/delete",method=RequestMethod.POST)
+	@RequestMapping(value="/movie/Romantic/{id}/delete",method=RequestMethod.POST)
 	public String removeRomantic(Model model, @PathVariable("id") int id){
 		
 		this.romanticService.removeRomanticMovie(id);

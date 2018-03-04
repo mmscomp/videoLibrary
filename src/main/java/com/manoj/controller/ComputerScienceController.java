@@ -68,7 +68,7 @@ public class ComputerScienceController {
 			
 		   }
 		}
-		req.setAttribute("errorMessage","Incorrect user name or password. Try again!");
+		req.setAttribute("errorMessage","Youre not authorized to take this action");
         model.addAttribute("field", "ComputerScience");
 		return "removeEdu";
 	}
