@@ -124,6 +124,7 @@ input > #11 {
    <input id="11" type=submit value=add />
    </form> 
   </section>
+    <%@ include file="footer.jsp" %>  
 
   </body>
   </html>
