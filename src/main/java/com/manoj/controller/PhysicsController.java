@@ -53,7 +53,7 @@ public class PhysicsController {
 	@RequestMapping(value="/edu/Physics/{id}/delete",method=RequestMethod.GET)
 	public String remove(Model model, @PathVariable("id") int id){
 		model.addAttribute("field","Physics");
-		model.addAttribute("id", id);
+	 	model.addAttribute("id", id);
 		return "removeEdu";
 	}
 	@RequestMapping(value="/edu/Physics/{id}/delete",method=RequestMethod.POST)
@@ -69,11 +69,9 @@ public class PhysicsController {
 			}
 		}
 		
-		req.setAttribute("errorMessage","Incorrect user name or password. Try again!");
-		req.setAttribute("a", sl);
-		req.setAttribute("b", password);
+		req.setAttribute("errorMessage","You're not authorized to take this action!");
 		model.addAttribute("field", "Physics");
-		return "removeEdu"; //redirect:/edu/Physics/{id}/delete";
+		return "removeEdu"; 
 	}
 
 	
