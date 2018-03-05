@@ -287,16 +287,16 @@ color: black;
    content: "\f015";
    font-size: 40px;
 }
-.fa-twitter-square:before {
+.fa-twitter:before {
    content: "\f081";
    font-size: 40px;
 }
-.fa-facebook-square:before {
+.fa-facebook:before {
    content: "\f082";
    font-size: 40px;
 }
 
-.fa-github-square:before {
+.fa-github:before {
    content: "\f092";
    font-size: 40px;   
 }
