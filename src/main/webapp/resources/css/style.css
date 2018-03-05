@@ -40,10 +40,6 @@ h1.signUp:hover {
     right: -9999px;
     margin: auto;
 }
-.footer {
-   position: absolute;
-   bottom: 0;
-}
 .movie{
     text-align: center;
     color: green;
@@ -94,15 +90,6 @@ h2{
 color: white;
 }
 
-.footer{
-    position: absolute;
-    bottom: 0;
-    width: 90%;
-    height: 80px;
-    margin-left: 50px;
-    color: #59749;
-    background-color: black;
-}
 .film-container {
     padding-right: 15px;
     padding-left: 15px;
@@ -247,7 +234,9 @@ a {
 .footer{
     position: relative;
     bottom: 0;
-    width: 100%;
+    width: 97%;
+    margin-left: auto;
+    margin-right: auto;
     height: 60px;
     background-color: #52EF49;
 }
@@ -278,7 +267,7 @@ a {
 }
 h1 > span {
 background-color: black;
-text-align: center;
+text-align: center; 
 }
 .title>h1{
 color: white;

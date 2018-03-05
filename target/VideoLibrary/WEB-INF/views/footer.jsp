@@ -6,10 +6,12 @@ pageEncoding="ISO-8859-1"%>
 <script type="text/javascript" src="js/my-app-service.js"></script>
 <link rel="stylesheet" href="<c:url value="/resources/css/font-awesome.css"/>">
 <link href="<c:url value="/resources/css/style.css" />" rel="stylesheet"> 
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="http://fortawesome.github.io/Font-Awesome/assets/font-awesome/css/font-awesome.css">   
 </head>
 <footer class="footer">
 
-        <ul>
+         <ul>
 
             <li>
                 <a href="/"> <i class="fa fa-home"></i></a>
@@ -22,7 +24,7 @@ pageEncoding="ISO-8859-1"%>
                 <a href="http://www.plus.google.com"> <i class="fa fa-google-plus"></i></a>
             </li>
             <li>
-                <a href="https://linkedin.com/in/manoj-shrestha"> <i class="fa fa-linkedin"></i></a>
+                <a href="https://linkedin.com"> <i class="fa fa-linkedin"></i></a>
             </li>
             <li><a href="https://www.github.com/mmscomp"><i class="fa fa-github" aria-hidden="true"></i></a></li>
 

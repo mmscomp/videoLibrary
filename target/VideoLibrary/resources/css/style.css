@@ -40,10 +40,6 @@ h1.signUp:hover {
     right: -9999px;
     margin: auto;
 }
-.footer {
-   position: absolute;
-   bottom: 0;
-}
 .movie{
     text-align: center;
     color: green;
@@ -94,15 +90,6 @@ h2{
 color: white;
 }
 
-.footer{
-    position: absolute;
-    bottom: 0;
-    width: 90%;
-    height: 80px;
-    margin-left: 50px;
-    color: #59749;
-    background-color: black;
-}
 .film-container {
     padding-right: 15px;
     padding-left: 15px;
@@ -243,18 +230,13 @@ a {
 	margin-left: 0;
 	background: lightblue;
 }
-/*
-#vdo.after{
-content: ' ';
-display: flex;
-justify-content: space-start;
-width: 100%;
-}*/
 
 .footer{
     position: relative;
     bottom: 0;
-    width: 100%;
+    width: 97%;
+    margin-left: auto;
+    margin-right: auto;
     height: 60px;
     background-color: #52EF49;
 }
@@ -285,7 +267,7 @@ width: 100%;
 }
 h1 > span {
 background-color: black;
-text-align: center;
+text-align: center; 
 }
 .title>h1{
 color: white;
@@ -294,26 +276,43 @@ text-align: center;
 h2{
 color: black;
 }
-/*a{
-color: solid black;
-font-size: 30pt;
-text-decoration: none;
-}*/
 * {
-   font-family: 'Source Sans Pro' !important;}
+   font-family: 'Source Sans Pro' important;}
 }
 .fa-phone:before {
    content: "\f095";
+   font-size: 40px;
 }
+.fa-home:before {
+   content: "\f015";
+   font-size: 40px;
+}
+.fa-twitter-square:before {
+   content: "\f081";
+   font-size: 40px;
+}
+.fa-facebook-square:before {
+   content: "\f082";
+   font-size: 40px;
+}
+
 .fa-github-square:before {
    content: "\f092";
+   font-size: 40px;   
 }
 .fa-linkedin:before {
    content: "\f0e1";
+   font-size: 40px;
 }
 .fa-linkedin-square:before {
   content: "\f08c";
+   font-size: 40px;
 }
+.fa-google-plus:before {
+   content: "\f0d5";
+   font-size: 40px;
+}
+
 .review{
 	width: 100%;
 	margin-left:0;
@@ -353,13 +352,6 @@ border-right: 1pt solid blue;
 	height: auto;
 	background: #eee;
 }
-/*.footer{
-    position: relative;
-    width: 80%;
-    height: 60px;
-    display: flex;
-    background-color: #52EF49;
-}*/
 h3 {
 	color: red;
 }
@@ -377,6 +369,7 @@ footer ul {
    margin: 0; /*1.0em;*/
    align-items: stretch;
    justify-content: space-between;
+   list-style: none;
 }
 
 footer a {
@@ -384,5 +377,4 @@ footer a {
    color: #000;
    font-weight: 100;
    font-size: 10pt;
- /*  padding: 1.5em; */
 }

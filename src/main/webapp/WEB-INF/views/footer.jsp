@@ -6,10 +6,12 @@ pageEncoding="ISO-8859-1"%>
 <script type="text/javascript" src="js/my-app-service.js"></script>
 <link rel="stylesheet" href="<c:url value="/resources/css/font-awesome.css"/>">
 <link href="<c:url value="/resources/css/style.css" />" rel="stylesheet"> 
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="http://fortawesome.github.io/Font-Awesome/assets/font-awesome/css/font-awesome.css">   
 </head>
 <footer class="footer">
 
-        <ul>
+         <ul>
 
             <li>
                 <a href="/"> <i class="fa fa-home"></i></a>
