@@ -18,7 +18,22 @@ public class Action {
 	private String casting;
 	@Column(name="links")
 	private String links;
-	
+	@Column(name="user")
+	private String user;
+	public String getUser() {
+		return user;
+	}
+	public void setUser(String user) {
+		this.user = user;
+	}
+	public String getPasswd() {
+		return passwd;
+	}
+	public void setPasswd(String passwd) {
+		this.passwd = passwd;
+	}
+	@Column(name="passwd")
+	private String passwd;
 	public String getLinks() {
 		return links;
 	}
