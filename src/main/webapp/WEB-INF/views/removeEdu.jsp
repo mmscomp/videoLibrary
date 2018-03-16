@@ -65,7 +65,7 @@ h1.signUp:hover {
 	<nav class="navbar navbar-default">
 
 		<ul class="nav navbar-nav navbar-right">
-			<li><a href="/">Home</a></li>
+			<li><a href="/"><i class="fa fa-arrow-left" aria-hidden="true"></i></a></li>
 		</ul>
 
 	</nav>
