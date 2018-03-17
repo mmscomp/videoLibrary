@@ -26,7 +26,7 @@ h1.signUp:hover {
    background-color: green;
    cursor: crosshair;
 }
-
+ 
 .bg-image{
     position: relative;
     overflow: hidden;
@@ -311,6 +311,12 @@ color: black;
 .fa-google-plus:before {
    content: "\f0d5";
    font-size: 40px;
+}
+.fa-arrow-left {
+	margin-left: 0;
+	padding-top: 60px;
+	vertical-align:bottom;
+	font-size: 40pt;
 }
 
 .review{
