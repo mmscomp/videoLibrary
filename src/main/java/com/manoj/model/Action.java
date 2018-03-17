@@ -20,6 +20,10 @@ public class Action {
 	private String links;
 	@Column(name="user")
 	private String user;
+	@Column(name="passwd")
+	private String passwd;
+
+	
 	public String getUser() {
 		return user;
 	}
@@ -32,8 +36,6 @@ public class Action {
 	public void setPasswd(String passwd) {
 		this.passwd = passwd;
 	}
-	@Column(name="passwd")
-	private String passwd;
 	public String getLinks() {
 		return links;
 	}
