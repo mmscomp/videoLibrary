@@ -1,6 +1,8 @@
-<html>
+ <html>
 <head>
 <title>Yahoo!!</title>
+<link href="<c:url value="/resources/css/style.css" />" rel="stylesheet"> 
+<!--  
 <link href="webjars/bootstrap/3.3.6/css/bootstrap.min.css"
 	rel="stylesheet">
 
@@ -56,14 +58,14 @@ h1.signUp:hover {
     background-color: #52EF49;
 }
 </style>
-
+-->
 </head>
 <body>
 
 	<nav class="navbar navbar-default">
 
 		<ul class="nav navbar-nav navbar-right">
-			<li><a href="/">Home</a></li>
+			<li><a href="/"><i class="fa fa-arrow-left" aria-hidden="true"></i></a></li>
 		</ul>
 
 	</nav>

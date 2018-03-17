@@ -118,7 +118,10 @@ input > #11 {
    <form action = "/movie/${genre}/add/" method="post">
    Title:<input class="one" type=text name=title >
    Casting:  <input class="two" type=text name=casting>
-   URLs: <input class="three" type=text name=links>
+   URLs: <input class="three" type=text name=links><br>
+   <br>
+   User Name: <input type=text name=user>
+   Pass Word: <input type=text password=passwd>
    <input id="11" type=submit value=add />
    </form> 
   </section>

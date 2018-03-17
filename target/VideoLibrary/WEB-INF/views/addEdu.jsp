@@ -116,11 +116,11 @@ input > #11 {
 
    <a href="/edu/${field}/">Go Back</a>
    <form action = "/edu/${field}/add/" method="post">
-   Title:<input class="one" type=text name=title >
-   Description:  <input class="two" type=text name=description>
+   Title: <input class="one" type=text name=title ><br>
+   Description:  <input class="two" type=text name=description><br>
    Link: <input class="three" type=text name=link><br>
    UserName: <input type=text name=username><br>
-   PassWord: <input type=password name= passwd>
+   PassWord: <input type=password name= passwd><br>
    <input id="11" type=submit value=add />
    </form> 
   </section>

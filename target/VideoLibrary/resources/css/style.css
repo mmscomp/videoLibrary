@@ -26,7 +26,7 @@ h1.signUp:hover {
    background-color: green;
    cursor: crosshair;
 }
-
+ 
 .bg-image{
     position: relative;
     overflow: hidden;
@@ -287,16 +287,16 @@ color: black;
    content: "\f015";
    font-size: 40px;
 }
-.fa-twitter-square:before {
+.fa-twitter:before {
    content: "\f081";
    font-size: 40px;
 }
-.fa-facebook-square:before {
+.fa-facebook:before {
    content: "\f082";
    font-size: 40px;
 }
 
-.fa-github-square:before {
+.fa-github:before {
    content: "\f092";
    font-size: 40px;   
 }
@@ -311,6 +311,12 @@ color: black;
 .fa-google-plus:before {
    content: "\f0d5";
    font-size: 40px;
+}
+.fa-arrow-left {
+	margin-left: 0;
+	padding-top: 60px;
+	vertical-align:bottom;
+	font-size: 40pt;
 }
 
 .review{
@@ -364,7 +370,7 @@ footer {
     width: 100%;
 }
 
-footer ul {
+ ul {
    display: flex;
    margin: 0; /*1.0em;*/
    align-items: stretch;

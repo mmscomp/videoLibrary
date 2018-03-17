@@ -15,127 +15,9 @@
 <link href="webjars/bootstrap/3.3.6/css/bootstrap.min.css"
 	rel="stylesheet">
 
-<!-- <style>
-.container {
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-    max-width: 1150px;
-}
-.view{
-    text-align: left;
-}
-.view-primary{
-    background-color: #dcb;
-    color: red;
-    padding-top: 25px;
-    padding-bottom: 160px;
-}
-.view-primary.bg-image > img{
-    opacity: 0.4;
-}
-.bg-image{
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-}
-.bg-image > img {
-    position: absolute;
-    top: -9999px;
-    left: -9999px;
-    bottom: -9999px;
-    right: -9999px;
-    margin: auto;
-}
-h1 > span {
-background-color: red;
-text-align: center;
-}
-.title>h1{
-color: white;
-text-align: center;
-}
-h2{
-color: black;
-}
-a{
-color: solid black;
-font-size: 30pt;
-text-decoration: none;
-}
-* {
-   font-family: 'Source Sans Pro' !important;}
-}
-.fa-phone:before {
-   content: "\f095";
-}
-.fa-github-square:before {
-   content: "\f092";
-}
-.fa-linkedin:before {
-   content: "\f0e1";
-}
-.fa-linkedin-square:before {
-  content: "\f08c";
-}
-.review{
-	width: 100%;
-	margin-left:0;
-	margin-right:0;
-display: flex;
-flex-basis: 50%;
-/*flex-direction: column;
-align-items: center;*/
-background: #cdcdcd;
-border-right: 1pt solid blue;
-}
-.user-review {
-	width: 70%;
-	height: auto;
-	border-right: 1pt solid black;
-	background: #ddd;
-}
-.del {
-	width: 29%;
-	margin-left: auto;
-	position: relative;
-	height: auto;
-	background: #eee;
-}
-/*.footer{
-    position: relative;
-    width: 80%;
-    height: 60px;
-    display: flex;
-    background-color: #52EF49;
-}*/
 
-footer {
-    margin-top: 5px;
-    border-top: 1px solid #E0E0E0;
-    margin-left: 90px;
-    margin-right: auto;
-    padding: 1em;
-    width: 100%;
-}
 
-footer ul {
-   display: flex;
-   margin: 0; /*1.0em;*/
-   align-items: stretch;
-   justify-content: space-between;
-}
 
-footer a {
-   text-decoration: none;
-   color: #000;
-   font-weight: 100;
-   font-size: 10pt;
- /*  padding: 1.5em; */
-}
-
-</style>-->
 <link href="<c:url value="/resources/css/style.css" />" rel="stylesheet"> 
 
 </head>
@@ -197,21 +79,7 @@ footer a {
 	</c:forEach>
 	</div>
 	</section>
+    <%@ include file="footer.jsp" %>  
 
-	<footer>
-		<ul>
-		   <li><a href="https://github.com/mmscomp">Github<i class="fa fa-github"></i></a></li>		
-		   <li><a href="#">Contact me<i class="fa fa-phone"></i></a></li>
-		   <li><a href="#">Follow me<i class="fa fa-twitter"></i></a></li>
-		   <!-- <li><a href="#">Find me<i class="fa fa-facebook"></i></a></li>-->
-		   <li><a href="#">Hangout with me<i class="fa fa-plus"></i></a></li>
-		   <li><a href="https://linkedin.com/in/manoj-shrestha">Link me<i class="fa fa-linkedin"></i></a></li>
-		   <li><a href="#">Github<i class="fa fa-github"></i></a></li>
-		</ul>
-	</footer>
-
-	<script src="webjars/jquery/1.9.1/jquery.min.js"></script>
-	<script src="webjars/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-
-</body>
+	</body>
 </html>
