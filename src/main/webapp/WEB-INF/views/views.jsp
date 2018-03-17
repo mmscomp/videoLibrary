@@ -38,7 +38,7 @@
 		<ul class="nav navbar-nav navbar-right">
 			<li><a href="#">Login</a></li>
 		</ul>-->
-	<a href="/movie/${genre}">Go Back</a>
+	<a href="/movie/${genre}"><i class= "fa fa-arrow-left" aria-hidden=true></i></a>
 	</nav>
 		<section>
 	<!--  <div class="container">-->
@@ -55,7 +55,7 @@
 	
 	<section class= "view view-primary bg-image">
 	<div class="container">
-	<div class="title"><h1><span> MOVIE Review for "${title}" </span></h1> </div>
+	<div class="title"><h1><span>  Review for "${title}" </span></h1> </div>
 	<div class="sub-title"> <h2>Read reviews</h2></div>
 	<c:forEach items="${reviewList}" var="review">
 	    <div class="review">
