@@ -22,8 +22,6 @@
 
 </head>
 <body>
-	<!--  <h1>My First JSP!!!</h1>-->
-	<!--  <h3>My user name is ${name} and passwd is </h3>-->
 
 	<nav class="navbar navbar-default">
 

@@ -36,7 +36,7 @@
 		<ul class="nav navbar-nav navbar-right">
 			<li><a href="#">Login</a></li>
 		</ul>-->
-	<a href="/movie/${genre}"><i class= "fa fa-arrow-left" aria-hidden=true></i></a>
+	<a href="/edu/${genre}"><i class= "fa fa-arrow-left" aria-hidden=true></i></a>
 	</nav>
 		<section>
 	<!--  <div class="container">-->
@@ -69,7 +69,7 @@
 	         </div>
 	         
 	         <div class="del">
-	            <a href="/movie/${genre}/${review.id}"><h3>remove</h3></a>
+	            <a href="/edu/${genre}/${review.id}"><h3>remove</h3></a>
 	         </div>
 	     </div>
 	         

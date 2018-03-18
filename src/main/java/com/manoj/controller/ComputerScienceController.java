@@ -93,8 +93,8 @@ public class ComputerScienceController {
     	System.out.println("I'm inside CS controller/views");
     	model.addAttribute("mId",id);
     	model.addAttribute("title", title);
-    	model.addAttribute("reviewList",this.compService.listReview("phy",title,id));
-    	return "views";
+    	model.addAttribute("reviewList",this.compService.listReview("ComputerScience",title,id));
+    	return "viewsEdu";
     }
   /*  @RequestMapping(value="/edu/login", method=RequestMethod.GET)
     public String logg(Model model){

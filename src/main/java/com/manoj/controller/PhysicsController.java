@@ -95,7 +95,7 @@ public class PhysicsController {
     	model.addAttribute("mId",id);
     	model.addAttribute("title", title);
     	model.addAttribute("reviewList",this.phyService.listReview("physics",title,id));
-    	return "views";
+    	return "viewsEdu";
     }
   /*  @RequestMapping(value="/edu/Physics/login", method=RequestMethod.GET)
     public String logg(Model model){
